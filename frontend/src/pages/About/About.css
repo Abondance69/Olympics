@@ -1,0 +1,238 @@
+.about-page {
+  animation: fadeIn 0.6s ease-in;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section {
+  margin-bottom: 4rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 0.5rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #495057;
+  margin-bottom: 1rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  color: #495057;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+/* Tech Grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tech-card {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.tech-card h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.tech-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tech-card ul li {
+  padding: 0.5rem 0;
+  color: #495057;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tech-card ul li:last-child {
+  border-bottom: none;
+}
+
+/* Models Info */
+.models-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.model-category {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+.model-category h4 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.model-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.model-category ul li {
+  padding: 0.75rem;
+  background: white;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  color: #495057;
+  text-align: center;
+  font-weight: 500;
+}
+
+.model-note {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.feature-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  min-width: 50px;
+}
+
+.feature-item h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  margin: 0;
+  color: #666;
+}
+
+/* Team List */
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.team-list li {
+  font-size: 1.1rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Resources */
+.resources-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.resource-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, var(--primary-color), #0052a3);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.resource-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.resource-btn span {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .models-info {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resources-links {
+    grid-template-columns: 1fr;
+  }
+}

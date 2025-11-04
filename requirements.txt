@@ -1,0 +1,10 @@
+pymysql
+sqlalchemy
+pandas
+openpyxl
+flask
+plotly
+scikit-learn
+python-dotenv
+lxml
+matplotlib

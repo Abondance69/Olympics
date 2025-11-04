@@ -1,0 +1,602 @@
+[
+  {
+    "country": "USA",
+    "predictions": {
+      "linear_regression": {
+        "gold": 34,
+        "silver": 29,
+        "bronze": 27,
+        "total": 91
+      },
+      "random_forest": {
+        "gold": 20,
+        "silver": 17,
+        "bronze": 15,
+        "total": 51
+      },
+      "ensemble": {
+        "gold": 27,
+        "silver": 23,
+        "bronze": 21,
+        "total": 71
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "China",
+    "predictions": {
+      "linear_regression": {
+        "gold": 25,
+        "silver": 20,
+        "bronze": 15,
+        "total": 60
+      },
+      "random_forest": {
+        "gold": 23,
+        "silver": 18,
+        "bronze": 15,
+        "total": 56
+      },
+      "ensemble": {
+        "gold": 24,
+        "silver": 19,
+        "bronze": 15,
+        "total": 58
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Russia",
+    "predictions": {
+      "linear_regression": {
+        "gold": 21,
+        "silver": 18,
+        "bronze": 17,
+        "total": 56
+      },
+      "random_forest": {
+        "gold": 18,
+        "silver": 16,
+        "bronze": 14,
+        "total": 48
+      },
+      "ensemble": {
+        "gold": 19,
+        "silver": 17,
+        "bronze": 16,
+        "total": 52
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Germany",
+    "predictions": {
+      "linear_regression": {
+        "gold": 12,
+        "silver": 12,
+        "bronze": 12,
+        "total": 36
+      },
+      "random_forest": {
+        "gold": 11,
+        "silver": 11,
+        "bronze": 11,
+        "total": 32
+      },
+      "ensemble": {
+        "gold": 11,
+        "silver": 11,
+        "bronze": 11,
+        "total": 34
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Great Britain",
+    "predictions": {
+      "linear_regression": {
+        "gold": 11,
+        "silver": 11,
+        "bronze": 12,
+        "total": 34
+      },
+      "random_forest": {
+        "gold": 10,
+        "silver": 10,
+        "bronze": 12,
+        "total": 32
+      },
+      "ensemble": {
+        "gold": 10,
+        "silver": 11,
+        "bronze": 12,
+        "total": 33
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "France",
+    "predictions": {
+      "linear_regression": {
+        "gold": 10,
+        "silver": 10,
+        "bronze": 12,
+        "total": 32
+      },
+      "random_forest": {
+        "gold": 9,
+        "silver": 9,
+        "bronze": 11,
+        "total": 30
+      },
+      "ensemble": {
+        "gold": 10,
+        "silver": 10,
+        "bronze": 12,
+        "total": 31
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Italy",
+    "predictions": {
+      "linear_regression": {
+        "gold": 8,
+        "silver": 7,
+        "bronze": 8,
+        "total": 23
+      },
+      "random_forest": {
+        "gold": 7,
+        "silver": 7,
+        "bronze": 8,
+        "total": 22
+      },
+      "ensemble": {
+        "gold": 8,
+        "silver": 7,
+        "bronze": 8,
+        "total": 22
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Japan",
+    "predictions": {
+      "linear_regression": {
+        "gold": 8,
+        "silver": 7,
+        "bronze": 7,
+        "total": 22
+      },
+      "random_forest": {
+        "gold": 8,
+        "silver": 6,
+        "bronze": 7,
+        "total": 21
+      },
+      "ensemble": {
+        "gold": 8,
+        "silver": 7,
+        "bronze": 7,
+        "total": 22
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Australia",
+    "predictions": {
+      "linear_regression": {
+        "gold": 6,
+        "silver": 6,
+        "bronze": 8,
+        "total": 21
+      },
+      "random_forest": {
+        "gold": 6,
+        "silver": 7,
+        "bronze": 7,
+        "total": 20
+      },
+      "ensemble": {
+        "gold": 6,
+        "silver": 7,
+        "bronze": 8,
+        "total": 20
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Sweden",
+    "predictions": {
+      "linear_regression": {
+        "gold": 5,
+        "silver": 6,
+        "bronze": 7,
+        "total": 18
+      },
+      "random_forest": {
+        "gold": 6,
+        "silver": 6,
+        "bronze": 7,
+        "total": 19
+      },
+      "ensemble": {
+        "gold": 5,
+        "silver": 6,
+        "bronze": 7,
+        "total": 19
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "South Korea",
+    "predictions": {
+      "linear_regression": {
+        "gold": 7,
+        "silver": 6,
+        "bronze": 5,
+        "total": 18
+      },
+      "random_forest": {
+        "gold": 6,
+        "silver": 6,
+        "bronze": 7,
+        "total": 18
+      },
+      "ensemble": {
+        "gold": 7,
+        "silver": 6,
+        "bronze": 6,
+        "total": 18
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Poland",
+    "predictions": {
+      "linear_regression": {
+        "gold": 5,
+        "silver": 5,
+        "bronze": 6,
+        "total": 15
+      },
+      "random_forest": {
+        "gold": 3,
+        "silver": 4,
+        "bronze": 5,
+        "total": 13
+      },
+      "ensemble": {
+        "gold": 4,
+        "silver": 4,
+        "bronze": 6,
+        "total": 14
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Canada",
+    "predictions": {
+      "linear_regression": {
+        "gold": 3,
+        "silver": 4,
+        "bronze": 6,
+        "total": 13
+      },
+      "random_forest": {
+        "gold": 3,
+        "silver": 4,
+        "bronze": 6,
+        "total": 13
+      },
+      "ensemble": {
+        "gold": 3,
+        "silver": 4,
+        "bronze": 6,
+        "total": 13
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Netherlands",
+    "predictions": {
+      "linear_regression": {
+        "gold": 4,
+        "silver": 4,
+        "bronze": 5,
+        "total": 13
+      },
+      "random_forest": {
+        "gold": 3,
+        "silver": 4,
+        "bronze": 5,
+        "total": 12
+      },
+      "ensemble": {
+        "gold": 3,
+        "silver": 4,
+        "bronze": 5,
+        "total": 12
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Cuba",
+    "predictions": {
+      "linear_regression": {
+        "gold": 4,
+        "silver": 4,
+        "bronze": 4,
+        "total": 12
+      },
+      "random_forest": {
+        "gold": 3,
+        "silver": 4,
+        "bronze": 5,
+        "total": 11
+      },
+      "ensemble": {
+        "gold": 4,
+        "silver": 4,
+        "bronze": 4,
+        "total": 12
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Brazil",
+    "predictions": {
+      "linear_regression": {
+        "gold": 2,
+        "silver": 2,
+        "bronze": 4,
+        "total": 7
+      },
+      "random_forest": {
+        "gold": 4,
+        "silver": 4,
+        "bronze": 4,
+        "total": 12
+      },
+      "ensemble": {
+        "gold": 3,
+        "silver": 3,
+        "bronze": 4,
+        "total": 10
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Kenya",
+    "predictions": {
+      "linear_regression": {
+        "gold": 3,
+        "silver": 3,
+        "bronze": 3,
+        "total": 9
+      },
+      "random_forest": {
+        "gold": 3,
+        "silver": 4,
+        "bronze": 3,
+        "total": 10
+      },
+      "ensemble": {
+        "gold": 3,
+        "silver": 3,
+        "bronze": 3,
+        "total": 9
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Switzerland",
+    "predictions": {
+      "linear_regression": {
+        "gold": 2,
+        "silver": 3,
+        "bronze": 3,
+        "total": 8
+      },
+      "random_forest": {
+        "gold": 3,
+        "silver": 4,
+        "bronze": 4,
+        "total": 11
+      },
+      "ensemble": {
+        "gold": 3,
+        "silver": 3,
+        "bronze": 3,
+        "total": 9
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Denmark",
+    "predictions": {
+      "linear_regression": {
+        "gold": 2,
+        "silver": 3,
+        "bronze": 3,
+        "total": 8
+      },
+      "random_forest": {
+        "gold": 3,
+        "silver": 3,
+        "bronze": 4,
+        "total": 10
+      },
+      "ensemble": {
+        "gold": 2,
+        "silver": 3,
+        "bronze": 4,
+        "total": 9
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "India",
+    "predictions": {
+      "linear_regression": {
+        "gold": 0,
+        "silver": 0,
+        "bronze": 2,
+        "total": 2
+      },
+      "random_forest": {
+        "gold": 5,
+        "silver": 5,
+        "bronze": 5,
+        "total": 16
+      },
+      "ensemble": {
+        "gold": 3,
+        "silver": 2,
+        "bronze": 4,
+        "total": 9
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Spain",
+    "predictions": {
+      "linear_regression": {
+        "gold": 2,
+        "silver": 3,
+        "bronze": 2,
+        "total": 7
+      },
+      "random_forest": {
+        "gold": 2,
+        "silver": 3,
+        "bronze": 3,
+        "total": 9
+      },
+      "ensemble": {
+        "gold": 2,
+        "silver": 3,
+        "bronze": 3,
+        "total": 8
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Jamaica",
+    "predictions": {
+      "linear_regression": {
+        "gold": 2,
+        "silver": 2,
+        "bronze": 2,
+        "total": 6
+      },
+      "random_forest": {
+        "gold": 3,
+        "silver": 3,
+        "bronze": 4,
+        "total": 9
+      },
+      "ensemble": {
+        "gold": 2,
+        "silver": 3,
+        "bronze": 3,
+        "total": 8
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "New Zealand",
+    "predictions": {
+      "linear_regression": {
+        "gold": 3,
+        "silver": 2,
+        "bronze": 2,
+        "total": 6
+      },
+      "random_forest": {
+        "gold": 2,
+        "silver": 3,
+        "bronze": 3,
+        "total": 9
+      },
+      "ensemble": {
+        "gold": 2,
+        "silver": 2,
+        "bronze": 3,
+        "total": 8
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Norway",
+    "predictions": {
+      "linear_regression": {
+        "gold": 2,
+        "silver": 2,
+        "bronze": 2,
+        "total": 7
+      },
+      "random_forest": {
+        "gold": 3,
+        "silver": 3,
+        "bronze": 4,
+        "total": 10
+      },
+      "ensemble": {
+        "gold": 3,
+        "silver": 3,
+        "bronze": 3,
+        "total": 8
+      }
+    },
+    "confidence": 0.85
+  },
+  {
+    "country": "Belgium",
+    "predictions": {
+      "linear_regression": {
+        "gold": 2,
+        "silver": 2,
+        "bronze": 3,
+        "total": 6
+      },
+      "random_forest": {
+        "gold": 3,
+        "silver": 3,
+        "bronze": 4,
+        "total": 10
+      },
+      "ensemble": {
+        "gold": 2,
+        "silver": 3,
+        "bronze": 3,
+        "total": 8
+      }
+    },
+    "confidence": 0.85
+  }
+]

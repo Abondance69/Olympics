@@ -25,22 +25,32 @@ const statsRoutes = require('./routes/stats');
 const predictionsRoutes = require('./routes/predictions');
 const countriesRoutes = require('./routes/countries');
 const athletesRoutes = require('./routes/athletes');
+const mlRoutes = require('./routes/ml'); // 🤖 Routes ML/AI
 
 app.use('/api/stats', statsRoutes);
 app.use('/api/predictions', predictionsRoutes);
 app.use('/api/countries', countriesRoutes);
 app.use('/api/athletes', athletesRoutes);
+app.use('/api/ml', mlRoutes); // 🤖 API Machine Learning
 
 // Route de test
 app.get('/', (req, res) => {
   res.json({
     message: 'Olympics Analytics API',
-    version: '1.0.0',
+    version: '2.0.0',
     endpoints: {
       stats: '/api/stats',
       predictions: '/api/predictions',
       countries: '/api/countries',
-      athletes: '/api/athletes'
+      athletes: '/api/athletes',
+      ml: '/api/ml' // 🤖 Machine Learning endpoints
+    },
+    mlEndpoints: {
+      health: '/api/ml/health',
+      paris2024: '/api/ml/predict/paris2024',
+      country: '/api/ml/predict/country/:name',
+      modelsInfo: '/api/ml/models/info',
+      retrain: '/api/ml/retrain (POST)'
     }
   });
 });

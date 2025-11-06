@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Home.css";
+import { apiUrl } from "data";
 
 interface OverviewStats {
   totalMedals: number;
@@ -17,7 +18,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/overview");
+        const response = await axios.get(`${apiUrl}/overview`);
         const randomStats = {
           totalMedals: response?.data?.totalMedals || 0,
           totalAthletes: response?.data?.totalAthletes || 0,

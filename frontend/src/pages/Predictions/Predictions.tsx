@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Predictions.css";
+import { apiUrl } from "data";
 
 interface PredictionResult {
   total_medals: number;
@@ -19,7 +20,7 @@ const Predictions: React.FC = () => {
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/countries/clusters");
+        const res = await axios.get(`${apiUrl}/countries/clusters`);
         const uniqueCountries = [
           ...new Set(res.data.data.map((item: any) => item.country_name)),
         ].sort();

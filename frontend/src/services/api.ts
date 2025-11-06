@@ -1,9 +1,8 @@
 import axios from 'axios';
-
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+import { apiUrl } from 'data';
 
 const api = axios.create({
-  baseURL: API_BASE_URL,
+  baseURL: apiUrl,
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
@@ -47,19 +46,19 @@ export const getLegends = () => api.get('/athletes/legends');
 export const getAthleteDetails = (id: number) => api.get(`/athletes/${id}`);
 
 // Games & Clusters endpoints
-export const getGames = () => axios.get('http://localhost:8000/api/games');
-export const getCountriesClusters = () => axios.get('http://localhost:8000/api/countries/clusters');
+export const getGames = () => axios.get(`${apiUrl}/games`);
+export const getCountriesClusters = () => axios.get(`${apiUrl}/countries/clusters`);
 
 // Results endpoint
 export const getResults = (params?: { country?: string; game?: string; season?: string }) => 
-  axios.get('http://localhost:8000/api/results', { params });
+  axios.get(`${apiUrl}`, { params });
 
 // Athlete prediction endpoint
 export const predictAthlete = (data: { age?: number; athlete_year_birth?: number; games_participations: number }) => 
-  axios.post('http://localhost:8000/api/predict/athlete', data);
+  axios.post(`${apiUrl}/predict/athlete`, data);
 
 // Athletes list endpoint
 export const getAthletesList = (params?: { year_birth?: number; games_participations?: number; limit?: number }) => 
-  axios.get('http://localhost:8000/api/athletes', { params });
+  axios.get(`${apiUrl}/athletes`, { params });
 
 export default api;

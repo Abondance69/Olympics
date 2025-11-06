@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Plot from "react-plotly.js";
 import "./Statistics.css";
+import { apiUrl } from "data";
 
 // -------------------------------
 // 🧩 Types
@@ -49,10 +50,10 @@ const Statistics: React.FC = () => {
     const fetchAll = async () => {
       try {
         const [resResults, resClusters, resGames, resMetrics] = await Promise.all([
-          axios.get("http://localhost:8000/api/results"),
-          axios.get("http://localhost:8000/api/countries/clusters"),
-          axios.get("http://localhost:8000/api/games"),
-          axios.get("http://localhost:8000/api/metrics"),
+          axios.get(`${apiUrl}/results`),
+          axios.get(`${apiUrl}/countries/clusters`),
+          axios.get(`${apiUrl}/games`),
+          axios.get(`${apiUrl}/metrics`),
         ]);
 
         setResults(resResults.data.data || []);

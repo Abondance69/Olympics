@@ -2,7 +2,10 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pandas as pd
 import numpy as np
+import sys
 import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -13,8 +16,15 @@ warnings.filterwarnings("ignore", message="Trying to unpickle estimator")
 from config import (
     BEST_MODEL_PATH, METRICS_REPORT_PATH,
     ATHLETE_MODEL_PATH, ATHLETE_SCALER_PATH, ATHLETE_METRICS_PATH,
-    CLUSTERS_CSV_PATH, ALLOWED_ORIGINS
+    CLUSTERS_CSV_PATH, ALLOWED_ORIGINS, OUTPUT_DIR
 )
+from utils import safe_load_json, safe_load_model
+
+# Encodage des pays (LabelEncoder sauvegardé)
+COUNTRY_ENCODER_PATH = os.path.join(OUTPUT_DIR, "country_encoder.pkl")
+country_encoder = safe_load_model(COUNTRY_ENCODER_PATH)
+
+
 from utils import safe_load_json, safe_load_model
 
 # =========================================================
@@ -87,8 +97,8 @@ def get_clusters():
 # =========================================================
 @app.post("/api/predict/medals")
 def predict_medals():
-    if country_model is None or country_encoder is None:
-        return bad_request("Modèle ou encodeur introuvable (best_model.pkl / country_encoder.pkl).")
+    if country_model is None:
+        return bad_request("Modèle de prédiction introuvable (best_model.pkl).")
 
     payload = request.get_json(silent=True) or {}
     required = ["country_name", "game_year", "game_season"]
@@ -99,7 +109,11 @@ def predict_medals():
     try:
         # Encodage du pays et de la saison
         season_map = {"Summer": 0, "Winter": 1}
-        country_encoded = int(country_encoder.transform([payload["country_name"]])[0])
+        if country_encoder is not None:
+            country_encoded = int(country_encoder.transform([payload["country_name"]])[0])
+        else:
+            # Fallback: hash du nom du pays si pas d'encodeur
+            country_encoded = abs(hash(payload["country_name"])) % 1000
 
         X = pd.DataFrame([{
             "country_encoded": country_encoded,
@@ -110,15 +124,16 @@ def predict_medals():
         # Prédiction
         y_pred = country_model.predict(X)[0]
         y_pred = int(np.maximum(0, round(float(y_pred))))
+
     except Exception as e:
         return bad_request(f"Erreur prédiction: {e}")
 
     return jsonify({
         "status": "ok",
         "input": payload,
+        "encoder_used": country_encoder is not None,
         "prediction": {"total_medals": y_pred}
     })
-
 
 # =========================================================
 # 🧠 3) Prédiction athlète
@@ -296,3 +311,8 @@ if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 8080))
     app.run(host="0.0.0.0", port=port)
+
+# if __name__ == "__main__":
+#     import os
+#     port = int(os.environ.get("PORT", 5050))  # évite 5000/8080
+#     app.run(host="0.0.0.0", port=port, debug=True)

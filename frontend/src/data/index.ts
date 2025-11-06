@@ -1,0 +1,1 @@
+export const apiUrl = "https://olympics-production-2b95.up.railway.app/api";

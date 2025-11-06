@@ -4,6 +4,12 @@ import pandas as pd
 import numpy as np
 import os
 
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
+warnings.filterwarnings("ignore", category=FutureWarning)
+warnings.filterwarnings("ignore", message="Trying to unpickle estimator")
+
+
 from backend.config import (
     BEST_MODEL_PATH, METRICS_REPORT_PATH,
     ATHLETE_MODEL_PATH, ATHLETE_SCALER_PATH, ATHLETE_METRICS_PATH,

@@ -1,3 +1,20 @@
+/*
+  api : http://localhost:8000/api/countries/clusters
+
+  {
+    "count": 2151,
+    "data": [
+        {
+            "cluster": 1,
+            "country_name": "Afghanistan",
+            "game_season": "Summer",
+            "game_year": 1996,
+            "season_encoded": 0,
+            "total_medals": 0
+        },
+    ]}
+*/
+
 import React, { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
 import { getMedalsByYear, getTopSports, getHostCountries, getHistoricEvents } from '../../services/api';
@@ -145,8 +162,8 @@ const Statistics: React.FC = () => {
                   <div className="sport-info">
                     <h4>{sport.sport}</h4>
                     <div className="sport-bar">
-                      <div 
-                        className="sport-bar-fill" 
+                      <div
+                        className="sport-bar-fill"
                         style={{ width: `${sport.percentage}%` }}
                       ></div>
                     </div>

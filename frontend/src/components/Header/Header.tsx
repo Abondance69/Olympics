@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Header.css";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <header className="header">
       <div className="container">
         <nav className="navbar">
-          <Link to="/" className="logo">
+          <Link to="/" className="logo" onClick={closeMenu}>
             <span className="logo-icon">🏅</span>
             <span className="logo-text">Olympics Analytics</span>
           </Link>
 
-          <button 
-            className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
+          {/* Menu burger (mobile) */}
+          <button
+            className={`menu-toggle ${isMenuOpen ? "active" : ""}`}
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -28,32 +28,15 @@ const Header: React.FC = () => {
             <span></span>
           </button>
 
-          <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-            <li>
-              <Link to="/" onClick={() => setIsMenuOpen(false)}>
-                Accueil
-              </Link>
-            </li>
-            <li>
-              <Link to="/statistics" onClick={() => setIsMenuOpen(false)}>
-                Statistiques
-              </Link>
-            </li>
-            <li>
-              <Link to="/predictions" onClick={() => setIsMenuOpen(false)}>
-                Prédictions
-              </Link>
-            </li>
-            <li>
-              <Link to="/france" onClick={() => setIsMenuOpen(false)}>
-                France 🇫🇷
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={() => setIsMenuOpen(false)}>
-                À propos
-              </Link>
-            </li>
+          {/* Liens du menu */}
+          <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
+            <li><Link to="/" onClick={closeMenu}>Accueil</Link></li>
+            <li><Link to="/statistics" onClick={closeMenu}>Statistiques</Link></li>
+            <li><Link to="/predictions" onClick={closeMenu}>Prédictions</Link></li>
+            <li><Link to="/athletes" onClick={closeMenu}>Athlètes</Link></li>
+            <li><Link to="/games" onClick={closeMenu}>Jeux & Hôtes</Link></li>
+            <li><Link to="/results" onClick={closeMenu}>Résultats</Link></li>
+            <li><Link to="/about" onClick={closeMenu}>À propos</Link></li>
           </ul>
         </nav>
       </div>

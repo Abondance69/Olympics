@@ -173,8 +173,8 @@ const Predictions: React.FC = () => {
                 <p className="sport">{athlete.sport}</p>
                 <p className="category">{athlete.category}</p>
                 <div className="probability-bar">
-                  <div 
-                    className="probability-fill" 
+                  <div
+                    className="probability-fill"
                     style={{ width: `${athlete.probability * 100}%` }}
                   ></div>
                 </div>
@@ -227,7 +227,7 @@ const Predictions: React.FC = () => {
         <section className="section">
           <h2 className="section-title">Clustering des pays</h2>
           <p className="text-center mb-4">
-            Nombre optimal de clusters: <strong>{clustering?.optimalK}</strong> | 
+            Nombre optimal de clusters: <strong>{clustering?.optimalK}</strong> |
             Silhouette Score: <strong>{clustering?.silhouetteScore}</strong>
           </p>
           <div className="clusters-grid">

@@ -8,6 +8,7 @@ import Predictions from './pages/Predictions/Predictions';
 import France from './pages/France/France';
 import About from './pages/About/About';
 import './App.css';
+import Host from 'pages/Host/Host';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
             <Route path="/predictions" element={<Predictions />} />
             <Route path="/france" element={<France />} />
             <Route path="/about" element={<About />} />
+            <Route path="/games" element={<Host />} />
           </Routes>
         </main>
         <Footer />

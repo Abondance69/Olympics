@@ -9,6 +9,8 @@ import France from './pages/France/France';
 import About from './pages/About/About';
 import './App.css';
 import Host from 'pages/Host/Host';
+import Result from 'pages/Result/Result';
+import Athlete from 'pages/Athlete/Athlete';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +25,9 @@ const App: React.FC = () => {
             <Route path="/france" element={<France />} />
             <Route path="/about" element={<About />} />
             <Route path="/games" element={<Host />} />
+            <Route path="/results" element={<Result />} />
+            <Route path="/athlete" element={<Athlete />} />
+            <Route path="/athletes" element={<Athlete />} />
           </Routes>
         </main>
         <Footer />

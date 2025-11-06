@@ -1,8 +1,0 @@
-
-L’API `/api/countries/clusters` renvoie la liste des pays regroupés par similarité de performance (selon leurs médailles et années de participation).
-
-L'API `/api/result` Récupérer les résultats d’un pays, d’une année ou d’une saison.
-GET /api/results?country=France
-GET /api/results?game=Tokyo 2020
-GET /api/results?season=Summer
-

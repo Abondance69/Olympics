@@ -2,6 +2,10 @@
   animation: fadeIn 0.6s ease-in;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Modern Hero Section */
 .hero-modern {
   position: relative;
@@ -645,13 +649,34 @@
   flex-wrap: wrap;
 }
 
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.4s ease all;
+}
+
+.btn-primary:hover {
+  background-color: #1d83ff;
+  color: white;
+}
+
 .btn-secondary {
   background-color: white;
   color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.4s ease all;
 }
 
 .btn-secondary:hover {
-  background-color: #f0f0f0;
+  background-color: #1d83ff;
+  color: white;
+}
+
+.stats-section {
+  padding: 20px 0;
 }
 
 @media (max-width: 768px) {

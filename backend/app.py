@@ -2,18 +2,14 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pandas as pd
 import numpy as np
-import sys
 import os
 
-# Ajouter le dossier parent au PYTHONPATH pour importer database
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from config import (
+from backend.config import (
     BEST_MODEL_PATH, METRICS_REPORT_PATH,
     ATHLETE_MODEL_PATH, ATHLETE_SCALER_PATH, ATHLETE_METRICS_PATH,
     CLUSTERS_CSV_PATH, ALLOWED_ORIGINS
 )
-from utils import safe_load_json, safe_load_model
+from backend.utils import safe_load_json, safe_load_model
 
 # =========================================================
 # 🚀 Initialisation de l’application Flask
@@ -31,6 +27,11 @@ athlete_model = safe_load_model(ATHLETE_MODEL_PATH)      # Modèle athlète
 athlete_scaler = safe_load_model(ATHLETE_SCALER_PATH)
 athlete_metrics = safe_load_json(ATHLETE_METRICS_PATH)
 
+# Encodage des pays (LabelEncoder sauvegardé)
+COUNTRY_ENCODER_PATH = os.path.join("ml", "output", "country_encoder.pkl")
+country_encoder = safe_load_model(COUNTRY_ENCODER_PATH)
+
+# Clusters CSV
 clusters_df = None
 try:
     clusters_df = pd.read_csv(CLUSTERS_CSV_PATH)
@@ -57,6 +58,7 @@ def health():
             "athlete": (athlete_model is not None and athlete_scaler is not None)
         },
         "resources": {
+            "encoder": country_encoder is not None,
             "clusters": clusters_df is not None,
             "metrics": metrics_report is not None and athlete_metrics is not None
         }
@@ -79,8 +81,8 @@ def get_clusters():
 # =========================================================
 @app.post("/api/predict/medals")
 def predict_medals():
-    if country_model is None:
-        return bad_request("Modèle pays/médailles introuvable (best_model.pkl).")
+    if country_model is None or country_encoder is None:
+        return bad_request("Modèle ou encodeur introuvable (best_model.pkl / country_encoder.pkl).")
 
     payload = request.get_json(silent=True) or {}
     required = ["country_name", "game_year", "game_season"]
@@ -89,12 +91,17 @@ def predict_medals():
         return bad_request(f"Champs manquants: {missing}")
 
     try:
+        # Encodage du pays et de la saison
         season_map = {"Summer": 0, "Winter": 1}
+        country_encoded = int(country_encoder.transform([payload["country_name"]])[0])
+
         X = pd.DataFrame([{
+            "country_encoded": country_encoded,
             "game_year": int(payload["game_year"]),
             "season_encoded": season_map.get(payload["game_season"], 0)
         }])
 
+        # Prédiction
         y_pred = country_model.predict(X)[0]
         y_pred = int(np.maximum(0, round(float(y_pred))))
     except Exception as e:
@@ -223,10 +230,13 @@ def get_results():
         "data": df.head(50).to_dict(orient="records")
     })
 
+
+# =========================================================
+# 🧑‍🤝‍🧑 7) API Athletes
+# =========================================================
 @app.get("/api/athletes")
 def get_athletes():
     from database.connexion import get_connection
-    import pandas as pd
     from sqlalchemy import create_engine
 
     conn = get_connection()
@@ -238,37 +248,41 @@ def get_athletes():
         SELECT athlete_full_name, games_participations, athlete_year_birth
         FROM athletes
         ORDER BY games_participations DESC
+        LIMIT 100
     """
     df = pd.read_sql(query, engine)
-
-    # Filtres
-    year_birth = request.args.get("year_birth")
-    games_participations = request.args.get("games_participations")
-
-    if year_birth:
-        try:
-            df = df[df["athlete_year_birth"] == int(year_birth)]
-        except:
-            pass
-
-    if games_participations:
-        try:
-            df = df[df["games_participations"] == int(games_participations)]
-        except:
-            pass
-
-    # Limiter les résultats
-    limit = request.args.get("limit", 100)
-    try:
-        df = df.head(int(limit))
-    except:
-        df = df.head(100)
 
     return jsonify({
         "status": "ok",
         "count": len(df),
         "data": df.to_dict(orient="records")
     })
+
+
+@app.get("/api/overview")
+def overview():
+    from database.connexion import get_connection
+    from sqlalchemy import create_engine
+
+    conn = get_connection()
+    engine = create_engine(
+        f"mysql+pymysql://{conn.user.decode()}:{conn.password.decode()}@{conn.host}:{conn.port}/{conn.db.decode()}"
+    )
+
+    total_medals = pd.read_sql("SELECT COUNT(*) AS total FROM results", engine)["total"][0]
+    total_athletes = pd.read_sql("SELECT COUNT(DISTINCT athlete_full_name) AS total FROM athletes", engine)["total"][0]
+    total_countries = pd.read_sql("SELECT COUNT(DISTINCT country_name) AS total FROM results", engine)["total"][0]
+    total_events = pd.read_sql("SELECT COUNT(DISTINCT event_title) AS total FROM results", engine)["total"][0]
+
+    return jsonify({
+        "totalMedals": int(total_medals),
+        "totalAthletes": int(total_athletes),
+        "totalCountries": int(total_countries),
+        "totalEvents": int(total_events)
+    })
+
+
+
 # =========================================================
 # 🚀 Lancement principal
 # =========================================================

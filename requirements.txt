@@ -11,3 +11,4 @@ matplotlib
 numpy
 seaborn
 joblib
+gunicorn

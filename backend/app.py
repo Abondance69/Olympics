@@ -2,13 +2,18 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pandas as pd
 import numpy as np
+import sys
+import os
 
-from backend.config import (
+# Ajouter le dossier parent au PYTHONPATH pour importer database
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from config import (
     BEST_MODEL_PATH, METRICS_REPORT_PATH,
     ATHLETE_MODEL_PATH, ATHLETE_SCALER_PATH, ATHLETE_METRICS_PATH,
     CLUSTERS_CSV_PATH, ALLOWED_ORIGINS
 )
-from backend.utils import safe_load_json, safe_load_model
+from utils import safe_load_json, safe_load_model
 
 # =========================================================
 # 🚀 Initialisation de l’application Flask
@@ -218,7 +223,52 @@ def get_results():
         "data": df.head(50).to_dict(orient="records")
     })
 
+@app.get("/api/athletes")
+def get_athletes():
+    from database.connexion import get_connection
+    import pandas as pd
+    from sqlalchemy import create_engine
 
+    conn = get_connection()
+    engine = create_engine(
+        f"mysql+pymysql://{conn.user.decode()}:{conn.password.decode()}@{conn.host}:{conn.port}/{conn.db.decode()}"
+    )
+
+    query = """
+        SELECT athlete_full_name, games_participations, athlete_year_birth
+        FROM athletes
+        ORDER BY games_participations DESC
+    """
+    df = pd.read_sql(query, engine)
+
+    # Filtres
+    year_birth = request.args.get("year_birth")
+    games_participations = request.args.get("games_participations")
+
+    if year_birth:
+        try:
+            df = df[df["athlete_year_birth"] == int(year_birth)]
+        except:
+            pass
+
+    if games_participations:
+        try:
+            df = df[df["games_participations"] == int(games_participations)]
+        except:
+            pass
+
+    # Limiter les résultats
+    limit = request.args.get("limit", 100)
+    try:
+        df = df.head(int(limit))
+    except:
+        df = df.head(100)
+
+    return jsonify({
+        "status": "ok",
+        "count": len(df),
+        "data": df.to_dict(orient="records")
+    })
 # =========================================================
 # 🚀 Lancement principal
 # =========================================================

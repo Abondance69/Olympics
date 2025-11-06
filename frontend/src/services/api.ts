@@ -46,4 +46,20 @@ export const getAthletes = (params?: { country?: string; sport?: string; limit?:
 export const getLegends = () => api.get('/athletes/legends');
 export const getAthleteDetails = (id: number) => api.get(`/athletes/${id}`);
 
+// Games & Clusters endpoints
+export const getGames = () => axios.get('http://localhost:8000/api/games');
+export const getCountriesClusters = () => axios.get('http://localhost:8000/api/countries/clusters');
+
+// Results endpoint
+export const getResults = (params?: { country?: string; game?: string; season?: string }) => 
+  axios.get('http://localhost:8000/api/results', { params });
+
+// Athlete prediction endpoint
+export const predictAthlete = (data: { age?: number; athlete_year_birth?: number; games_participations: number }) => 
+  axios.post('http://localhost:8000/api/predict/athlete', data);
+
+// Athletes list endpoint
+export const getAthletesList = (params?: { year_birth?: number; games_participations?: number; limit?: number }) => 
+  axios.get('http://localhost:8000/api/athletes', { params });
+
 export default api;

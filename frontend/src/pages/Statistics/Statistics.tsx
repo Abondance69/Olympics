@@ -1,265 +1,254 @@
-/*
-  api : http://localhost:8000/api/countries/clusters
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import Plot from "react-plotly.js";
+import "./Statistics.css";
 
-  {
-    "count": 2151,
-    "data": [
-        {
-            "cluster": 1,
-            "country_name": "Afghanistan",
-            "game_season": "Summer",
-            "game_year": 1996,
-            "season_encoded": 0,
-            "total_medals": 0
-        },
-    ]}
-*/
+// -------------------------------
+// 🧩 Types
+// -------------------------------
+interface Result {
+  country_name: string;
+  discipline_title: string;
+  medal_type: string;
+  slug_game: string;
+  event_title: string;
+}
 
-import React, { useEffect, useState } from 'react';
-import Plot from 'react-plotly.js';
-import { getMedalsByYear, getTopSports, getHostCountries, getHistoricEvents } from '../../services/api';
-import './Statistics.css';
+interface Cluster {
+  country_name: string;
+  total_medals: number;
+  game_year: number;
+  season_encoded: number;
+  cluster: number;
+}
 
+interface Game {
+  game_name: string;
+  game_year: number;
+  game_season: string;
+  game_location: string;
+}
+
+interface Metrics {
+  status: string;
+  country_medals: Record<string, any>;
+  athlete: Record<string, any>;
+}
+
+// -------------------------------
+// 📊 Composant principal
+// -------------------------------
 const Statistics: React.FC = () => {
-  const [medalsByYear, setMedalsByYear] = useState<any[]>([]);
-  const [topSports, setTopSports] = useState<any[]>([]);
-  const [hosts, setHosts] = useState<any[]>([]);
-  const [events, setEvents] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [results, setResults] = useState<Result[]>([]);
+  const [clusters, setClusters] = useState<Cluster[]>([]);
+  const [games, setGames] = useState<Game[]>([]);
+  const [metrics, setMetrics] = useState<Metrics | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    fetchData();
+    const fetchAll = async () => {
+      try {
+        const [resResults, resClusters, resGames, resMetrics] = await Promise.all([
+          axios.get("http://localhost:8000/api/results"),
+          axios.get("http://localhost:8000/api/countries/clusters"),
+          axios.get("http://localhost:8000/api/games"),
+          axios.get("http://localhost:8000/api/metrics"),
+        ]);
+
+        setResults(resResults.data.data || []);
+        setClusters(resClusters.data.data || []);
+        setGames(resGames.data.data || []);
+        setMetrics(resMetrics.data || null);
+      } catch (err) {
+        console.error("❌ Erreur lors du chargement des statistiques :", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchAll();
   }, []);
 
-  const fetchData = async () => {
-    try {
-      const [medalsRes, sportsRes, hostsRes, eventsRes] = await Promise.all([
-        getMedalsByYear('FRA'),
-        getTopSports(),
-        getHostCountries(),
-        getHistoricEvents()
-      ]);
+  if (loading) return <div className="loading">Chargement des statistiques...</div>;
 
-      setMedalsByYear(medalsRes.data);
-      setTopSports(sportsRes.data);
-      setHosts(hostsRes.data);
-      setEvents(eventsRes.data);
-    } catch (error) {
-      console.error('Error fetching statistics:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  // -------------------------------
+  // 🥇 Calcul : Top 10 pays les plus médaillés
+  // -------------------------------
+  const medalCountByCountry = results.reduce<Record<string, number>>((acc, r) => {
+    acc[r.country_name] = (acc[r.country_name] || 0) + 1;
+    return acc;
+  }, {});
 
-  if (loading) {
-    return (
-      <div className="loading">
-        <div className="spinner"></div>
-      </div>
-    );
-  }
+  const sortedCountries = Object.entries(medalCountByCountry)
+    .sort(([, a], [, b]) => b - a)
+    .slice(0, 10);
 
-  // Préparer les données pour les graphiques
-  const years = medalsByYear.map(d => d.year);
-  const goldMedals = medalsByYear.map(d => d.gold);
-  const silverMedals = medalsByYear.map(d => d.silver);
-  const bronzeMedals = medalsByYear.map(d => d.bronze);
+  const countries = sortedCountries.map(([c]) => c);
+  const medals = sortedCountries.map(([, m]) => m);
 
-  const sportsNames = topSports.map(s => s.sport);
-  const sportsMedals = topSports.map(s => s.medals);
-  // const sportsPercentages = topSports.map(s => s.percentage);
-
+  // -------------------------------
+  // 🖼️ Rendu principal
+  // -------------------------------
   return (
     <div className="statistics-page fade-in">
-      <div className="hero">
-        <div className="container">
-          <h1 className="hero-title">📊 Statistiques Olympiques</h1>
-          <p className="hero-subtitle">
-            120 ans de données analysées avec visualisations interactives
-          </p>
-        </div>
-      </div>
-
       <div className="container">
-        {/* Medals by Year */}
+        <h1 className="page-title">📊 Statistiques Olympiques</h1>
+        <p className="page-subtitle">
+          Analyse des performances des pays, des athlètes et de l’intelligence artificielle.
+        </p>
+
+        {/* 🌍 Graphique : Clusters */}
         <section className="section">
-          <h2 className="section-title">Évolution des médailles françaises</h2>
-          <div className="chart-container">
-            <Plot
-              data={[
-                {
-                  x: years,
-                  y: goldMedals,
-                  name: 'Or',
-                  type: 'scatter',
-                  mode: 'lines+markers',
-                  line: { color: '#FFD700', width: 3 },
-                  marker: { size: 8 }
-                },
-                {
-                  x: years,
-                  y: silverMedals,
-                  name: 'Argent',
-                  type: 'scatter',
-                  mode: 'lines+markers',
-                  line: { color: '#C0C0C0', width: 3 },
-                  marker: { size: 8 }
-                },
-                {
-                  x: years,
-                  y: bronzeMedals,
-                  name: 'Bronze',
-                  type: 'scatter',
-                  mode: 'lines+markers',
-                  line: { color: '#CD7F32', width: 3 },
-                  marker: { size: 8 }
-                }
-              ]}
-              layout={{
-                title: 'Évolution des médailles olympiques (1896-2022)',
-                xaxis: { title: 'Année' },
-                yaxis: { title: 'Nombre de médailles' },
-                autosize: true,
-                hovermode: 'x unified'
-              }}
-              useResizeHandler={true}
-              style={{ width: '100%', height: '500px' }}
-            />
-          </div>
+          <h2>🌍 Clusters de performance</h2>
+          <p>
+            Regroupement automatique des pays selon leurs performances moyennes et années de participation.
+          </p>
+          <Plot
+            data={[
+              {
+                x: clusters.map((c) => c.total_medals),
+                y: clusters.map((c) => c.game_year),
+                mode: "markers",
+                marker: { size: 10, color: clusters.map((c) => c.cluster), colorscale: "Viridis" },
+                text: clusters.map((c) => c.country_name),
+              },
+            ]}
+            layout={{
+              title: "Répartition des pays par clusters",
+              xaxis: { title: "Total Médailles" },
+              yaxis: { title: "Année des Jeux" },
+            }}
+            style={{ width: "100%", height: "500px" }}
+          />
         </section>
 
-        {/* Top Sports */}
+        {/* 🏟️ Graphique : Chronologie des Jeux */}
         <section className="section">
-          <h2 className="section-title">Sports dominants de la France</h2>
-          <div className="grid grid-2">
-            <div className="chart-container">
-              <Plot
-                data={[
-                  {
-                    labels: sportsNames,
-                    values: sportsMedals,
-                    type: 'pie',
-                    marker: {
-                      colors: ['#0066cc', '#0052a3', '#003d7a', '#002952', '#FFD700']
-                    },
-                    textinfo: 'label+percent',
-                    textposition: 'outside'
-                  }
-                ]}
-                layout={{
-                  title: 'Répartition des médailles par sport',
-                  autosize: true
-                }}
-                useResizeHandler={true}
-                style={{ width: '100%', height: '450px' }}
-              />
-            </div>
+          <h2>🏟️ Évolution des Jeux Olympiques</h2>
+          <Plot
+            data={[
+              {
+                x: games.map((g) => g.game_year),
+                y: games.map((g) => (g.game_season === "Summer" ? 1 : 0)),
+                mode: "markers+lines" as any, // 👈 Cast explicite
+                text: games.map((g) => `${g.game_name} – ${g.game_location}`),
+                marker: { color: "#FF9800", size: 10 },
+              },
+            ]}
+            layout={{
+              title: "Chronologie des éditions (Été = 1 / Hiver = 0)",
+              xaxis: { title: "Année" },
+              yaxis: { title: "Saison" },
+            }}
+            style={{ width: "100%", height: "400px" }}
+          />
+        </section>
 
-            <div className="sports-list">
-              {topSports.map((sport, index) => (
-                <div key={index} className="sport-item">
-                  <div className="sport-rank">#{index + 1}</div>
-                  <div className="sport-info">
-                    <h4>{sport.sport}</h4>
-                    <div className="sport-bar">
-                      <div
-                        className="sport-bar-fill"
-                        style={{ width: `${sport.percentage}%` }}
-                      ></div>
+
+
+        {/* 🥇 Graphique : Top 10 pays */}
+        <section className="section">
+          <h2>🏅 Top 10 des pays les plus médaillés</h2>
+          <Plot
+            data={[
+              {
+                type: "bar",
+                x: countries,
+                y: medals,
+                marker: { color: "#0052a3" },
+              },
+            ]}
+            layout={{
+              title: "Nombre total de médailles par pays",
+              xaxis: { title: "Pays" },
+              yaxis: { title: "Médailles" },
+            }}
+            style={{ width: "100%", height: "450px" }}
+          />
+        </section>
+
+        {/* 🤖 Section : Performances des modèles IA */}
+        <section className="section metrics-section">
+          <h2>🤖 Performances des modèles IA</h2>
+
+          {metrics ? (
+            <>
+              {/* ======= Bloc Athlète ======= */}
+              <div className="ai-metrics-grid">
+                <div className="ai-card athlete-model">
+                  <h3>🏃 Modèle Athlète</h3>
+                  <div className="ai-values">
+                    <div>
+                      <span>🎯 Accuracy</span>
+                      <strong>{(metrics.athlete?.accuracy * 100).toFixed(1)}%</strong>
                     </div>
-                    <p>{sport.medals} médailles ({sport.percentage}%)</p>
+                    <div>
+                      <span>📈 Précision</span>
+                      <strong>{(metrics.athlete?.precision * 100).toFixed(1)}%</strong>
+                    </div>
+                    <div>
+                      <span>🔁 Recall</span>
+                      <strong>{(metrics.athlete?.recall * 100).toFixed(1)}%</strong>
+                    </div>
+                    <div>
+                      <span>⚖️ F1-Score</span>
+                      <strong>{(metrics.athlete?.f1 * 100).toFixed(1)}%</strong>
+                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
-        {/* Host Countries */}
-        <section className="section">
-          <h2 className="section-title">Pays organisateurs</h2>
-          <div className="hosts-grid">
-            {hosts.map((host, index) => (
-              <div key={index} className="host-card">
-                <h3>{host.country}</h3>
-                <div className="host-count">{host.count} JO organisés</div>
-                <div className="host-cities">
-                  {host.cities.map((city: string, i: number) => (
-                    <span key={i} className="city-badge">{city}</span>
-                  ))}
+                {/* ======= Bloc Pays ======= */}
+                <div className="ai-card country-models">
+                  <h3>🌍 Modèles de prédiction par pays</h3>
+                  <div className="model-table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Modèle</th>
+                          <th>R²</th>
+                          <th>MAE</th>
+                          <th>RMSE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {Object.entries(metrics.country_medals || {}).map(([name, v]) => (
+                          <tr key={name}>
+                            <td><strong>{name}</strong></td>
+                            <td>{v.R2.toFixed(3)}</td>
+                            <td>{v.MAE.toFixed(1)}</td>
+                            <td>{v.RMSE.toFixed(1)}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </section>
 
-        {/* Historic Events Verification */}
-        <section className="section">
-          <h2 className="section-title">Vérification des événements marquants</h2>
-          <div className="events-list">
-            {events.map((event) => (
-              <div key={event.id} className="event-card">
-                <div className="event-header">
-                  <span className="event-year">{event.year}</span>
-                  {event.verified && <span className="verified-badge">✓ Vérifié</span>}
-                </div>
-                <h4>{event.title}</h4>
-                <p>{event.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Interactive Charts Section */}
-        <section className="section">
-          <h2 className="section-title">Analyses complémentaires</h2>
-          <div className="grid grid-2">
-            <div className="chart-container">
-              <Plot
-                data={[
-                  {
-                    x: hosts.map(h => h.country),
-                    y: hosts.map(h => h.count),
-                    type: 'bar',
-                    marker: {
-                      color: hosts.map(h => h.count),
-                      colorscale: 'Blues'
-                    }
-                  }
-                ]}
-                layout={{
-                  title: 'JO organisés par pays',
-                  xaxis: { title: 'Pays' },
-                  yaxis: { title: 'Nombre de JO' },
-                  autosize: true
-                }}
-                useResizeHandler={true}
-                style={{ width: '100%', height: '400px' }}
-              />
-            </div>
-
-            <div className="chart-container">
-              <Plot
-                data={[
-                  {
-                    values: [248, 276, 316],
-                    labels: ['Or', 'Argent', 'Bronze'],
-                    type: 'pie',
-                    marker: {
-                      colors: ['#FFD700', '#C0C0C0', '#CD7F32']
+              {/* ======= Graphique comparatif ======= */}
+              <div className="ai-chart">
+                <h3>📊 Comparaison des modèles (R²)</h3>
+                <Plot
+                  data={[
+                    {
+                      x: Object.keys(metrics.country_medals),
+                      y: Object.values(metrics.country_medals).map((v: any) => v.R2),
+                      type: "bar",
+                      marker: { color: ["#007bff", "#28a745", "#ff9800"] },
                     },
-                    hole: 0.4
-                  }
-                ]}
-                layout={{
-                  title: 'Répartition médailles France (Total)',
-                  autosize: true
-                }}
-                useResizeHandler={true}
-                style={{ width: '100%', height: '400px' }}
-              />
-            </div>
-          </div>
+                  ]}
+                  layout={{
+                    title: "",
+                    xaxis: { title: "Modèles" },
+                    yaxis: { title: "Score R²", range: [0, 1] },
+                    margin: { t: 30, l: 60, r: 20, b: 50 },
+                  }}
+                  style={{ width: "100%", height: "400px" }}
+                />
+              </div>
+            </>
+          ) : (
+            <p>Aucune métrique disponible pour le moment.</p>
+          )}
         </section>
       </div>
     </div>

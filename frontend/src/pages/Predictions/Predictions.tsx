@@ -1,253 +1,146 @@
-import React, { useEffect, useState } from 'react';
-import Plot from 'react-plotly.js';
-import { getParis2024Predictions, getAthletePredictions, getClustering, getModelsComparison } from '../../services/api';
-import './Predictions.css';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "./Predictions.css";
 
-interface CountryPrediction {
-  rank: number;
-  country: string;
-  gold: number;
-  silver: number;
-  bronze: number;
-  total: number;
-}
-
-interface AthletePrediction {
-  name: string;
-  sport: string;
-  country: string;
-  predictedMedal: string;
-  probability: number;
-  category: string;
+interface PredictionResult {
+  total_medals: number;
 }
 
 const Predictions: React.FC = () => {
-  const [predictions, setPredictions] = useState<any>(null);
-  const [athletes, setAthletes] = useState<AthletePrediction[]>([]);
-  const [clustering, setClustering] = useState<any>(null);
-  const [models, setModels] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [countries, setCountries] = useState<any[]>([]);
+  const [selectedCountry, setSelectedCountry] = useState<string>("");
+  const [selectedYear, setSelectedYear] = useState<any>(2028);
+  const [season, setSeason] = useState<"Summer" | "Winter">("Summer");
+  const [prediction, setPrediction] = useState<PredictionResult | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
+  // Chargement de la liste des pays
   useEffect(() => {
-    fetchAllData();
+    const fetchCountries = async () => {
+      try {
+        const res = await axios.get("http://localhost:8000/api/countries/clusters");
+        const uniqueCountries = [
+          ...new Set(res.data.data.map((item: any) => item.country_name)),
+        ].sort();
+        setCountries(uniqueCountries);
+      } catch (err) {
+        console.error("Erreur chargement pays:", err);
+      }
+    };
+    fetchCountries();
   }, []);
 
-  const fetchAllData = async () => {
-    try {
-      const [predRes, athRes, clusterRes, modelsRes] = await Promise.all([
-        getParis2024Predictions(),
-        getAthletePredictions(),
-        getClustering(),
-        getModelsComparison()
-      ]);
+  // Génération automatique des 20 prochaines éditions des JO
+  const years = Array.from({ length: 20 }, (_, i) => 2024 + i * 4);
 
-      setPredictions(predRes.data);
-      setAthletes(athRes.data);
-      setClustering(clusterRes.data);
-      setModels(modelsRes.data);
-    } catch (error) {
-      console.error('Error fetching predictions:', error);
+  // Lancer la prédiction
+  const handlePredict = async () => {
+    if (!selectedCountry) {
+      setError("Veuillez sélectionner un pays.");
+      return;
+    }
+
+    setError(null);
+    setLoading(true);
+    setPrediction(null);
+
+    try {
+      const res = await axios.post("http://localhost:8000/api/predict/medals", {
+        country_name: selectedCountry,
+        game_year: selectedYear,
+        game_season: season,
+      });
+
+      setPrediction(res.data.prediction);
+    } catch (err: any) {
+      console.error(err);
+      setError(err.response?.data?.message || "Erreur de prédiction.");
     } finally {
       setLoading(false);
     }
   };
 
-  if (loading) {
-    return (
-      <div className="loading">
-        <div className="spinner"></div>
-      </div>
-    );
-  }
-
-  // Préparer les données pour le graphique Top 25
-  const top25Countries = predictions?.top25.slice(0, 10).map((c: CountryPrediction) => c.country) || [];
-  const top25Gold = predictions?.top25.slice(0, 10).map((c: CountryPrediction) => c.gold) || [];
-  const top25Silver = predictions?.top25.slice(0, 10).map((c: CountryPrediction) => c.silver) || [];
-  const top25Bronze = predictions?.top25.slice(0, 10).map((c: CountryPrediction) => c.bronze) || [];
-
   return (
     <div className="predictions-page fade-in">
-      <div className="hero">
-        <div className="container">
-          <h1 className="hero-title">🤖 Prédictions Paris 2024</h1>
-          <p className="hero-subtitle">
-            Prédictions basées sur Machine Learning & Deep Learning
-          </p>
-        </div>
-      </div>
-
       <div className="container">
-        {/* France Prediction */}
-        <section className="section">
-          <h2 className="section-title">🇫🇷 Prédiction pour la France</h2>
-          <div className="france-prediction-card">
-            <div className="prediction-header">
-              <h3>Classement prédit: #{predictions?.france.rank}</h3>
-              <div className="confidence-badge">
-                Confiance: {(predictions?.france.confidence * 100).toFixed(0)}%
-              </div>
-            </div>
-            <div className="medals-prediction">
-              <div className="medal-pred">
-                <span className="medal-icon">🥇</span>
-                <span className="medal-count">{predictions?.france.gold}</span>
-                <span className="medal-label">Or</span>
-              </div>
-              <div className="medal-pred">
-                <span className="medal-icon">🥈</span>
-                <span className="medal-count">{predictions?.france.silver}</span>
-                <span className="medal-label">Argent</span>
-              </div>
-              <div className="medal-pred">
-                <span className="medal-icon">🥉</span>
-                <span className="medal-count">{predictions?.france.bronze}</span>
-                <span className="medal-label">Bronze</span>
-              </div>
-              <div className="medal-pred total">
-                <span className="medal-icon">🏅</span>
-                <span className="medal-count">{predictions?.france.total}</span>
-                <span className="medal-label">Total</span>
-              </div>
-            </div>
-            <div className="model-info">
-              <p>Modèle utilisé: <strong>{predictions?.france.model}</strong></p>
-              <p>Précision: <strong>{(predictions?.modelMetrics.accuracy * 100).toFixed(1)}%</strong></p>
-            </div>
-          </div>
-        </section>
+        <h1 className="hero-title">🏅 Prédiction de Médailles</h1>
+        <p className="hero-subtitle">
+          Prédisez le nombre total de médailles pour un pays et une édition
+          future des Jeux Olympiques.
+        </p>
 
-        {/* Top 25 Chart */}
-        <section className="section">
-          <h2 className="section-title">Top 10 des pays (Prédiction)</h2>
-          <div className="chart-container">
-            <Plot
-              data={[
-                {
-                  x: top25Countries,
-                  y: top25Gold,
-                  name: 'Or',
-                  type: 'bar',
-                  marker: { color: '#FFD700' }
-                },
-                {
-                  x: top25Countries,
-                  y: top25Silver,
-                  name: 'Argent',
-                  type: 'bar',
-                  marker: { color: '#C0C0C0' }
-                },
-                {
-                  x: top25Countries,
-                  y: top25Bronze,
-                  name: 'Bronze',
-                  type: 'bar',
-                  marker: { color: '#CD7F32' }
-                }
-              ]}
-              layout={{
-                barmode: 'stack',
-                title: 'Répartition des médailles prédites',
-                xaxis: { title: 'Pays' },
-                yaxis: { title: 'Nombre de médailles' },
-                autosize: true
-              }}
-              useResizeHandler={true}
-              style={{ width: '100%', height: '500px' }}
-            />
-          </div>
-        </section>
-
-        {/* Athletes Predictions */}
-        <section className="section">
-          <h2 className="section-title">Athlètes français susceptibles de médailler</h2>
-          <div className="athletes-grid">
-            {athletes.map((athlete, index) => (
-              <div key={index} className="athlete-card">
-                <div className={`medal-badge badge-${athlete.predictedMedal.toLowerCase()}`}>
-                  {athlete.predictedMedal === 'Gold' && '🥇'}
-                  {athlete.predictedMedal === 'Silver' && '🥈'}
-                  {athlete.predictedMedal === 'Bronze' && '🥉'}
-                </div>
-                <h3>{athlete.name}</h3>
-                <p className="sport">{athlete.sport}</p>
-                <p className="category">{athlete.category}</p>
-                <div className="probability-bar">
-                  <div
-                    className="probability-fill"
-                    style={{ width: `${athlete.probability * 100}%` }}
-                  ></div>
-                </div>
-                <p className="probability-text">
-                  Probabilité: {(athlete.probability * 100).toFixed(0)}%
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Models Comparison */}
-        <section className="section">
-          <h2 className="section-title">Comparaison des modèles IA</h2>
-          <div className="models-table-container">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Modèle</th>
-                  <th>Type</th>
-                  <th>Précision</th>
-                  <th>RMSE</th>
-                  <th>Temps d'entraînement</th>
-                  <th>Sélectionné</th>
-                </tr>
-              </thead>
-              <tbody>
-                {models.map((model, index) => (
-                  <tr key={index} className={model.selected ? 'selected-row' : ''}>
-                    <td><strong>{model.name}</strong></td>
-                    <td>
-                      <span className={`badge ${model.type === 'Machine Learning' ? 'badge-ml' : 'badge-dl'}`}>
-                        {model.type}
-                      </span>
-                    </td>
-                    <td>{(model.accuracy * 100).toFixed(1)}%</td>
-                    <td>{model.rmse}</td>
-                    <td>{model.trainTime}</td>
-                    <td>
-                      {model.selected ? '✅' : ''}
-                    </td>
-                  </tr>
+        <div className="prediction-form">
+          {/* Ligne Pays + Année */}
+          <div className="form-row">
+            <div className="form-group" style={{ flex: 1, marginRight: "10px" }}>
+              <label>Pays</label>
+              <select
+                value={selectedCountry}
+                onChange={(e) => setSelectedCountry(e.target.value)}
+              >
+                <option value="">-- Sélectionnez un pays --</option>
+                {countries.map((country) => (
+                  <option key={country} value={country}>
+                    {country}
+                  </option>
                 ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
+              </select>
+            </div>
 
-        {/* Clustering */}
-        <section className="section">
-          <h2 className="section-title">Clustering des pays</h2>
-          <p className="text-center mb-4">
-            Nombre optimal de clusters: <strong>{clustering?.optimalK}</strong> |
-            Silhouette Score: <strong>{clustering?.silhouetteScore}</strong>
-          </p>
-          <div className="clusters-grid">
-            {clustering?.clusters.map((cluster: any) => (
-              <div key={cluster.id} className="cluster-card">
-                <h3>{cluster.name}</h3>
-                <p className="cluster-avg">
-                  Moyenne: {cluster.avgMedals} médailles
-                </p>
-                <div className="cluster-countries">
-                  {cluster.countries.slice(0, 5).join(', ')}
-                  {cluster.countries.length > 5 && '...'}
-                </div>
-                <p className="cluster-characteristics">
-                  {cluster.characteristics}
-                </p>
-              </div>
-            ))}
+            <div className="form-group" style={{ flex: 1 }}>
+              <label>Année</label>
+              <select
+                value={selectedYear}
+                onChange={(e) => setSelectedYear(parseInt(e.target.value))}
+              >
+                {years.map((year) => (
+                  <option key={year} value={year}>
+                    {year}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
-        </section>
+
+          {/* Sélection de la saison */}
+          <div className="form-group">
+            <label>Saison</label>
+            <div className="season-toggle">
+              <button
+                className={season === "Summer" ? "active" : ""}
+                onClick={() => setSeason("Summer")}
+              >
+                ☀️ Été
+              </button>
+              <button
+                className={season === "Winter" ? "active" : ""}
+                onClick={() => setSeason("Winter")}
+              >
+                ❄️ Hiver
+              </button>
+            </div>
+          </div>
+
+          {/* Bouton de prédiction */}
+          <button className="predict-btn" onClick={handlePredict} disabled={loading}>
+            {loading ? "Prédiction en cours..." : "🔮 Prédire"}
+          </button>
+
+          {/* Résultat ou erreur */}
+          {error && <p className="error-text">{error}</p>}
+          {prediction && (
+            <div className="result-card fade-in">
+              <h2>Résultat de la prédiction</h2>
+              <p>
+                🏆 <strong>{selectedCountry}</strong> devrait remporter environ{" "}
+                <strong>{prediction.total_medals}</strong> médailles lors des Jeux{" "}
+                {season === "Summer" ? "d'Été" : "d'Hiver"} de{" "}
+                <strong>{selectedYear}</strong>.
+              </p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

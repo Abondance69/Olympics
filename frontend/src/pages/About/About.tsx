@@ -19,8 +19,8 @@ const About: React.FC = () => {
             <div className="about-section">
               <h2>🎯 Objectif du projet</h2>
               <p>
-                Ce projet a été développé dans le cadre d'un hackathon visant à analyser 
-                120 ans d'histoire olympique (1896-2022) et à prédire les résultats des 
+                Ce projet a été développé dans le cadre d'un hackathon visant à analyser
+                120 ans d'histoire olympique (1896-2022) et à prédire les résultats des
                 Jeux Olympiques de Paris 2024 en utilisant l'Intelligence Artificielle.
               </p>
             </div>
@@ -44,63 +44,35 @@ const About: React.FC = () => {
                   <ul>
                     <li>React 18</li>
                     <li>TypeScript</li>
-                    <li>Plotly.js (visualisations)</li>
                     <li>CSS3 (Responsive Design)</li>
                   </ul>
                 </div>
                 <div className="tech-card">
                   <h3>Backend</h3>
                   <ul>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
+                    <li>Flask</li>
                     <li>REST API</li>
-                    <li>CORS & dotenv</li>
+                    <li>CORS</li>
                   </ul>
                 </div>
                 <div className="tech-card">
                   <h3>Base de données</h3>
                   <ul>
-                    <li>MySQL / MariaDB</li>
-                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
                     <li>Support multi-SGBD</li>
                   </ul>
                 </div>
                 <div className="tech-card">
                   <h3>Intelligence Artificielle</h3>
                   <ul>
-                    <li>Python - Pandas / Spark</li>
-                    <li>Scikit-learn (ML)</li>
-                    <li>TensorFlow (DL)</li>
-                    <li>GridSearch, métriques</li>
+                    <li>Python</li>
+                    <li>Scikit-learn</li>
+                    <li>Pandas</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <div className="about-section">
-              <h2>🤖 Modèles d'IA développés</h2>
-              <div className="models-info">
-                <div className="model-category">
-                  <h4>Machine Learning (M1)</h4>
-                  <ul>
-                    <li>Random Forest</li>
-                    <li>Decision Tree</li>
-                    <li>Support Vector Machine (SVM)</li>
-                  </ul>
-                </div>
-                <div className="model-category">
-                  <h4>Deep Learning (M2)</h4>
-                  <ul>
-                    <li>Convolutional Neural Networks (CNN)</li>
-                    <li>Long Short-Term Memory (LSTM)</li>
-                  </ul>
-                </div>
-              </div>
-              <p className="model-note">
-                Les modèles ont été optimisés avec GridSearch et évalués sur plusieurs 
-                métriques (accuracy, RMSE, confusion matrix).
-              </p>
-            </div>
 
             <div className="about-section">
               <h2>📈 Fonctionnalités principales</h2>
@@ -139,32 +111,27 @@ const About: React.FC = () => {
             <div className="about-section">
               <h2>👥 Équipe & Méthodologie</h2>
               <p>
-                Ce projet a été réalisé en collaboration entre étudiants M1 et M2, 
-                chacun apportant son expertise :
+                Ce projet a été réalisé en collaboration entre étudiants de M1 et M2,
+                chacun apportant son expertise en <strong>data science</strong>,
+                <strong>développement web</strong> et <strong>analyse prédictive</strong>.
               </p>
               <ul className="team-list">
-                <li>🎓 <strong>M1</strong> : Base de données, Pandas, Machine Learning</li>
-                <li>🎓 <strong>M2</strong> : Spark, Deep Learning, Architecture avancée</li>
-                <li>🤝 Collaboration étroite et comparaison des résultats</li>
-                <li>📋 Gestion de projet via Trello</li>
+                <li>🤝 Collaboration étroite et comparaison des résultats entre les membres.</li>
+                <li>📋 Gestion du projet via Trello et GitHub (suivi agile des tâches).</li>
+                <li>🚀 Intégration continue entre le backend Flask et le frontend React.</li>
+                <li>📊 Analyse collective des performances et interprétation des résultats.</li>
               </ul>
             </div>
 
             <div className="about-section cta-section">
               <h2>🔗 Ressources</h2>
               <div className="resources-links">
-                <a href="https://github.com" className="resource-btn" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Abondance69/Olympics" className="resource-btn" target="_blank" rel="noopener noreferrer">
                   <span>💻</span> GitHub Repository
                 </a>
                 <a href="https://olympics.com" className="resource-btn" target="_blank" rel="noopener noreferrer">
                   <span>🏅</span> Olympics.com
                 </a>
-                <button className="resource-btn" onClick={() => alert('Dataset disponible prochainement')}>
-                  <span>📊</span> Dataset
-                </button>
-                <button className="resource-btn" onClick={() => alert('Documentation en cours de rédaction')}>
-                  <span>📝</span> Documentation
-                </button>
               </div>
             </div>
           </div>

@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
             <h4>Technologies</h4>
             <ul>
               <li>React + TypeScript</li>
-              <li>Express.js API</li>
+              <li>Flask</li>
               <li>Plotly.js</li>
               <li>Machine Learning</li>
             </ul>

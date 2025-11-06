@@ -3,9 +3,9 @@ sqlalchemy
 openpyxl
 flask
 plotly
-scikit-learn==1.7.2
 pandas==2.2.2
 numpy==1.26.4
+scikit-learn==1.7.2
 python-dotenv
 lxml
 matplotlib

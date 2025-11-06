@@ -1,0 +1,252 @@
+[
+  {
+    "country_name": "United States of America",
+    "country_code": "US",
+    "predicted_gold": 208,
+    "predicted_silver": 207,
+    "predicted_bronze": 204,
+    "predicted_total": 619,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Great Britain",
+    "country_code": "GB",
+    "predicted_gold": 112,
+    "predicted_silver": 121,
+    "predicted_bronze": 126,
+    "predicted_total": 359,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "France",
+    "country_code": "FR",
+    "predicted_gold": 91,
+    "predicted_silver": 97,
+    "predicted_bronze": 108,
+    "predicted_total": 297,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Federal Republic of Germany",
+    "country_code": "DE",
+    "predicted_gold": 76,
+    "predicted_silver": 86,
+    "predicted_bronze": 97,
+    "predicted_total": 259,
+    "model_confidence": "medium",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "People's Republic of China",
+    "country_code": "CN",
+    "predicted_gold": 87,
+    "predicted_silver": 84,
+    "predicted_bronze": 82,
+    "predicted_total": 254,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Japan",
+    "country_code": "JP",
+    "predicted_gold": 74,
+    "predicted_silver": 79,
+    "predicted_bronze": 89,
+    "predicted_total": 242,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Canada",
+    "country_code": "CA",
+    "predicted_gold": 72,
+    "predicted_silver": 79,
+    "predicted_bronze": 90,
+    "predicted_total": 241,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Italy",
+    "country_code": "IT",
+    "predicted_gold": 74,
+    "predicted_silver": 75,
+    "predicted_bronze": 85,
+    "predicted_total": 234,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Australia",
+    "country_code": "AU",
+    "predicted_gold": 70,
+    "predicted_silver": 74,
+    "predicted_bronze": 85,
+    "predicted_total": 230,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Netherlands",
+    "country_code": "NL",
+    "predicted_gold": 64,
+    "predicted_silver": 70,
+    "predicted_bronze": 78,
+    "predicted_total": 212,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Russian Federation",
+    "country_code": "RU",
+    "predicted_gold": 65,
+    "predicted_silver": 62,
+    "predicted_bronze": 70,
+    "predicted_total": 197,
+    "model_confidence": "medium",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Norway",
+    "country_code": "NO",
+    "predicted_gold": 62,
+    "predicted_silver": 64,
+    "predicted_bronze": 70,
+    "predicted_total": 196,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Sweden",
+    "country_code": "SE",
+    "predicted_gold": 51,
+    "predicted_silver": 54,
+    "predicted_bronze": 58,
+    "predicted_total": 163,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Republic of Korea",
+    "country_code": "KR",
+    "predicted_gold": 49,
+    "predicted_silver": 50,
+    "predicted_bronze": 53,
+    "predicted_total": 152,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Hungary",
+    "country_code": "HU",
+    "predicted_gold": 41,
+    "predicted_silver": 40,
+    "predicted_bronze": 46,
+    "predicted_total": 127,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Switzerland",
+    "country_code": "CH",
+    "predicted_gold": 36,
+    "predicted_silver": 37,
+    "predicted_bronze": 41,
+    "predicted_total": 114,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Austria",
+    "country_code": "AT",
+    "predicted_gold": 33,
+    "predicted_silver": 36,
+    "predicted_bronze": 40,
+    "predicted_total": 108,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "German Democratic Republic (Germany)",
+    "country_code": "DDDE",
+    "predicted_gold": 37,
+    "predicted_silver": 32,
+    "predicted_bronze": 32,
+    "predicted_total": 101,
+    "model_confidence": "medium",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Spain",
+    "country_code": "ES",
+    "predicted_gold": 31,
+    "predicted_silver": 35,
+    "predicted_bronze": 33,
+    "predicted_total": 99,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Poland",
+    "country_code": "PL",
+    "predicted_gold": 25,
+    "predicted_silver": 29,
+    "predicted_bronze": 37,
+    "predicted_total": 91,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Denmark",
+    "country_code": "DK",
+    "predicted_gold": 20,
+    "predicted_silver": 26,
+    "predicted_bronze": 30,
+    "predicted_total": 76,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Romania",
+    "country_code": "RO",
+    "predicted_gold": 21,
+    "predicted_silver": 22,
+    "predicted_bronze": 26,
+    "predicted_total": 69,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Cuba",
+    "country_code": "CU",
+    "predicted_gold": 22,
+    "predicted_silver": 22,
+    "predicted_bronze": 25,
+    "predicted_total": 69,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Finland",
+    "country_code": "FI",
+    "predicted_gold": 17,
+    "predicted_silver": 18,
+    "predicted_bronze": 21,
+    "predicted_total": 55,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  },
+  {
+    "country_name": "Bulgaria",
+    "country_code": "BG",
+    "predicted_gold": 12,
+    "predicted_silver": 16,
+    "predicted_bronze": 17,
+    "predicted_total": 46,
+    "model_confidence": "high",
+    "data_source": "MySQL AlwaysData - Real Historical Data"
+  }
+]

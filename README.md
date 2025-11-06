@@ -306,15 +306,6 @@ echo "web: node server.js" > Procfile
 - **M1** : Pandas, Machine Learning (sklearn), Frontend React
 - **M2** : Spark, Deep Learning (TensorFlow), Architecture
 
-### Gestion de projet
-
-📋 **Trello** : [Lien vers le board Trello](#)
-
-### Présentation
-
-📊 **Slides** : [Lien vers Google Slides](#)
-
----
 
 ## 📚 Ressources
 
@@ -360,4 +351,3 @@ Ce projet a été développé dans un cadre éducatif (Hackathon).
 
 ---
 
-**Développé avec ❤️ pour le Hackathon Olympics** | Paris 2024 🇫🇷

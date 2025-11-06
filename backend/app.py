@@ -10,12 +10,12 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", message="Trying to unpickle estimator")
 
 
-from backend.config import (
+from config import (
     BEST_MODEL_PATH, METRICS_REPORT_PATH,
     ATHLETE_MODEL_PATH, ATHLETE_SCALER_PATH, ATHLETE_METRICS_PATH,
     CLUSTERS_CSV_PATH, ALLOWED_ORIGINS
 )
-from backend.utils import safe_load_json, safe_load_model
+from utils import safe_load_json, safe_load_model
 
 # =========================================================
 # 🚀 Initialisation de l’application Flask

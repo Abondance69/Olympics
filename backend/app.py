@@ -4,15 +4,17 @@ import pandas as pd
 import numpy as np
 import sys
 import os
+import warnings
 
+# === Autoriser l’import depuis la racine du projet ===
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-import warnings
+# === Ignore les warnings inutiles ===
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", message="Trying to unpickle estimator")
 
-
+# === Imports locaux ===
 from config import (
     BEST_MODEL_PATH, METRICS_REPORT_PATH,
     ATHLETE_MODEL_PATH, ATHLETE_SCALER_PATH, ATHLETE_METRICS_PATH,
@@ -20,12 +22,6 @@ from config import (
 )
 from utils import safe_load_json, safe_load_model
 
-# Encodage des pays (LabelEncoder sauvegardé)
-COUNTRY_ENCODER_PATH = os.path.join(OUTPUT_DIR, "country_encoder.pkl")
-country_encoder = safe_load_model(COUNTRY_ENCODER_PATH)
-
-
-from utils import safe_load_json, safe_load_model
 
 # =========================================================
 # 🚀 Initialisation de l’application Flask
@@ -33,21 +29,21 @@ from utils import safe_load_json, safe_load_model
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": ALLOWED_ORIGINS}})
 
+
 # =========================================================
 # 📦 Chargement des artefacts au démarrage
 # =========================================================
-country_model = safe_load_model(BEST_MODEL_PATH)         # Modèle médailles pays
+country_model = safe_load_model(BEST_MODEL_PATH)
 metrics_report = safe_load_json(METRICS_REPORT_PATH)
 
-athlete_model = safe_load_model(ATHLETE_MODEL_PATH)      # Modèle athlète
+athlete_model = safe_load_model(ATHLETE_MODEL_PATH)
 athlete_scaler = safe_load_model(ATHLETE_SCALER_PATH)
 athlete_metrics = safe_load_json(ATHLETE_METRICS_PATH)
 
-# Encodage des pays (LabelEncoder sauvegardé)
-COUNTRY_ENCODER_PATH = os.path.join("ml", "output", "country_encoder.pkl")
+COUNTRY_ENCODER_PATH = os.path.join(OUTPUT_DIR, "country_encoder.pkl")
 country_encoder = safe_load_model(COUNTRY_ENCODER_PATH)
 
-# Clusters CSV
+# Charger clusters.csv si dispo
 clusters_df = None
 try:
     clusters_df = pd.read_csv(CLUSTERS_CSV_PATH)
@@ -107,19 +103,12 @@ def predict_medals():
         return bad_request(f"Champs manquants: {missing}")
 
     try:
-        # Encodage du pays et de la saison
+        # Encodage du pays (facultatif)
         season_map = {"Summer": 0, "Winter": 1}
-        if country_encoder is not None:
-            country_encoded = int(country_encoder.transform([payload["country_name"]])[0])
-        else:
-            # Fallback: hash du nom du pays si pas d'encodeur
-            country_encoded = abs(hash(payload["country_name"])) % 1000
 
-        X = pd.DataFrame([{
-            "country_encoded": country_encoded,
-            "game_year": int(payload["game_year"]),
-            "season_encoded": season_map.get(payload["game_season"], 0)
-        }])
+        # === Ton modèle n’a été entraîné qu’avec 2 colonnes ===
+        # game_year + season_encoded
+        X = np.array([[int(payload["game_year"]), season_map.get(payload["game_season"], 0)]])
 
         # Prédiction
         y_pred = country_model.predict(X)[0]
@@ -134,6 +123,7 @@ def predict_medals():
         "encoder_used": country_encoder is not None,
         "prediction": {"total_medals": y_pred}
     })
+
 
 # =========================================================
 # 🧠 3) Prédiction athlète

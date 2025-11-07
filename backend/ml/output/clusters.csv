@@ -1,0 +1,2152 @@
+country_name,game_year,game_season,total_medals,season_encoded,cluster
+Afghanistan,1996,Summer,0,0,1
+Afghanistan,2004,Summer,0,0,1
+Afghanistan,2008,Summer,20,0,0
+Afghanistan,2012,Summer,40,0,0
+Afghanistan,2016,Summer,0,0,0
+Afghanistan,2020,Summer,0,0,0
+Albania,1992,Summer,0,0,1
+Albania,1996,Summer,0,0,1
+Albania,2000,Summer,0,0,1
+Albania,2004,Summer,0,0,1
+Albania,2006,Winter,0,1,2
+Albania,2008,Summer,0,0,0
+Albania,2010,Winter,0,1,2
+Albania,2012,Summer,0,0,0
+Albania,2014,Winter,0,1,2
+Albania,2016,Summer,0,0,0
+Albania,2018,Winter,0,1,2
+Albania,2020,Summer,0,0,0
+Albania,2022,Winter,0,1,2
+Algeria,1992,Summer,140,0,1
+Algeria,1996,Summer,435,0,1
+Algeria,2000,Summer,1400,0,1
+Algeria,2004,Summer,0,0,1
+Algeria,2006,Winter,0,1,2
+Algeria,2008,Summer,840,0,0
+Algeria,2010,Winter,0,1,2
+Algeria,2012,Summer,260,0,0
+Algeria,2016,Summer,780,0,0
+Algeria,2020,Summer,0,0,0
+American Samoa,1992,Summer,0,0,1
+American Samoa,1994,Winter,0,1,2
+American Samoa,1996,Summer,0,0,1
+American Samoa,2000,Summer,0,0,1
+American Samoa,2004,Summer,0,0,1
+American Samoa,2008,Summer,0,0,0
+American Samoa,2012,Summer,0,0,0
+American Samoa,2016,Summer,0,0,0
+American Samoa,2020,Summer,0,0,0
+American Samoa,2022,Winter,0,1,2
+Andorra,1992,Summer,0,0,1
+Andorra,1994,Winter,0,1,2
+Andorra,1996,Summer,0,0,1
+Andorra,1998,Winter,0,1,2
+Andorra,2000,Summer,0,0,1
+Andorra,2002,Winter,0,1,2
+Andorra,2004,Summer,0,0,1
+Andorra,2006,Winter,0,1,2
+Andorra,2008,Summer,0,0,0
+Andorra,2010,Winter,0,1,2
+Andorra,2012,Summer,0,0,0
+Andorra,2014,Winter,0,1,2
+Andorra,2016,Summer,0,0,0
+Andorra,2018,Winter,0,1,2
+Andorra,2020,Summer,0,0,0
+Andorra,2022,Winter,0,1,2
+Angola,1992,Summer,0,0,1
+Angola,1996,Summer,0,0,1
+Angola,2000,Summer,0,0,1
+Angola,2004,Summer,0,0,1
+Angola,2008,Summer,0,0,0
+Angola,2012,Summer,0,0,0
+Angola,2016,Summer,0,0,0
+Angola,2020,Summer,0,0,0
+Antigua and Barbuda,1992,Summer,0,0,1
+Antigua and Barbuda,1996,Summer,0,0,1
+Antigua and Barbuda,2000,Summer,0,0,1
+Antigua and Barbuda,2004,Summer,0,0,1
+Antigua and Barbuda,2008,Summer,0,0,0
+Antigua and Barbuda,2012,Summer,0,0,0
+Antigua and Barbuda,2016,Summer,0,0,0
+Antigua and Barbuda,2020,Summer,0,0,0
+Argentina,1992,Summer,250,0,1
+Argentina,1994,Winter,0,1,2
+Argentina,1996,Summer,1365,0,1
+Argentina,1998,Winter,0,1,2
+Argentina,2000,Summer,3200,0,1
+Argentina,2002,Winter,0,1,2
+Argentina,2004,Summer,6400,0,1
+Argentina,2006,Winter,0,1,2
+Argentina,2008,Summer,5040,0,0
+Argentina,2010,Winter,0,1,2
+Argentina,2012,Summer,3100,0,0
+Argentina,2014,Winter,0,1,2
+Argentina,2016,Summer,4350,0,0
+Argentina,2018,Winter,0,1,2
+Argentina,2020,Summer,1950,0,0
+Argentina,2022,Winter,0,1,2
+Armenia,1994,Winter,0,1,2
+Armenia,1996,Summer,300,0,1
+Armenia,1998,Winter,0,1,2
+Armenia,2000,Summer,170,0,1
+Armenia,2002,Winter,0,1,2
+Armenia,2004,Summer,0,0,1
+Armenia,2006,Winter,0,1,2
+Armenia,2008,Summer,1200,0,0
+Armenia,2010,Winter,0,1,2
+Armenia,2012,Summer,420,0,0
+Armenia,2014,Winter,0,1,2
+Armenia,2016,Summer,1000,0,0
+Armenia,2018,Winter,0,1,2
+Armenia,2020,Summer,560,0,0
+Armenia,2022,Winter,0,1,2
+Aruba,1992,Summer,0,0,1
+Aruba,1996,Summer,0,0,1
+Aruba,2000,Summer,0,0,1
+Aruba,2004,Summer,0,0,1
+Aruba,2008,Summer,0,0,0
+Aruba,2012,Summer,0,0,0
+Aruba,2016,Summer,0,0,0
+Aruba,2020,Summer,0,0,0
+Australia,1992,Summer,11550,0,1
+Australia,1994,Winter,200,1,2
+Australia,1996,Summer,65790,0,1
+Australia,1998,Winter,125,1,2
+Australia,2000,Summer,196305,0,3
+Australia,2002,Winter,740,1,2
+Australia,2004,Summer,151200,0,3
+Australia,2006,Winter,780,1,2
+Australia,2008,Summer,140400,0,3
+Australia,2010,Winter,1320,1,2
+Australia,2012,Summer,103200,0,0
+Australia,2014,Winter,2280,1,2
+Australia,2016,Summer,90100,0,0
+Australia,2018,Winter,1920,1,2
+Australia,2020,Summer,128500,0,3
+Australia,2022,Winter,2600,1,2
+Austria,1992,Summer,555,0,1
+Austria,1994,Winter,4095,1,2
+Austria,1996,Summer,930,0,1
+Austria,1998,Winter,10030,1,2
+Austria,2000,Summer,2560,0,1
+Austria,2002,Winter,18700,1,2
+Austria,2004,Summer,5520,0,1
+Austria,2006,Winter,26880,1,2
+Austria,2008,Summer,2160,0,0
+Austria,2010,Winter,19720,1,2
+Austria,2012,Summer,0,0,0
+Austria,2014,Winter,28260,1,2
+Austria,2016,Summer,1320,0,0
+Austria,2018,Winter,22500,1,2
+Austria,2020,Summer,4690,0,0
+Austria,2022,Winter,29450,1,2
+Azerbaijan,1996,Summer,100,0,1
+Azerbaijan,1998,Winter,0,1,2
+Azerbaijan,2000,Summer,720,0,1
+Azerbaijan,2002,Winter,0,1,2
+Azerbaijan,2004,Summer,1600,0,1
+Azerbaijan,2006,Winter,0,1,2
+Azerbaijan,2008,Summer,2160,0,0
+Azerbaijan,2010,Winter,0,1,2
+Azerbaijan,2012,Summer,5000,0,0
+Azerbaijan,2014,Winter,0,1,2
+Azerbaijan,2016,Summer,9720,0,0
+Azerbaijan,2018,Winter,0,1,2
+Azerbaijan,2020,Summer,2310,0,0
+Azerbaijan,2022,Winter,0,1,2
+Bahamas,1992,Summer,15,0,1
+Bahamas,1996,Summer,70,0,1
+Bahamas,2000,Summer,345,0,1
+Bahamas,2004,Summer,280,0,1
+Bahamas,2008,Summer,300,0,0
+Bahamas,2012,Summer,70,0,0
+Bahamas,2016,Summer,240,0,0
+Bahamas,2020,Summer,80,0,0
+Bahrain,1992,Summer,0,0,1
+Bahrain,1996,Summer,0,0,1
+Bahrain,2000,Summer,0,0,1
+Bahrain,2004,Summer,0,0,1
+Bahrain,2008,Summer,0,0,0
+Bahrain,2012,Summer,100,0,0
+Bahrain,2016,Summer,340,0,0
+Bahrain,2020,Summer,120,0,0
+Bangladesh,1996,Summer,0,0,1
+Bangladesh,2000,Summer,0,0,1
+Bangladesh,2004,Summer,0,0,1
+Bangladesh,2008,Summer,0,0,0
+Bangladesh,2012,Summer,0,0,0
+Bangladesh,2016,Summer,0,0,0
+Bangladesh,2020,Summer,0,0,0
+Barbados,1992,Summer,0,0,1
+Barbados,1996,Summer,0,0,1
+Barbados,2000,Summer,70,0,1
+Barbados,2004,Summer,0,0,1
+Barbados,2008,Summer,0,0,0
+Barbados,2012,Summer,0,0,0
+Barbados,2016,Summer,0,0,0
+Belarus,1994,Winter,650,1,2
+Belarus,1996,Summer,10350,0,1
+Belarus,1998,Winter,720,1,2
+Belarus,2000,Summer,17510,0,1
+Belarus,2002,Winter,830,1,2
+Belarus,2004,Summer,18000,0,1
+Belarus,2006,Winter,600,1,2
+Belarus,2008,Summer,22780,0,0
+Belarus,2010,Winter,1890,1,2
+Belarus,2012,Summer,16380,0,0
+Belarus,2014,Winter,3600,1,2
+Belarus,2016,Summer,7830,0,0
+Belarus,2018,Winter,2250,1,2
+Belarus,2020,Summer,5320,0,0
+Belarus,2022,Winter,1140,1,2
+Belgium,1992,Summer,510,0,1
+Belgium,1994,Winter,0,1,2
+Belgium,1996,Summer,1800,0,1
+Belgium,1998,Winter,15,1,2
+Belgium,2000,Summer,3570,0,1
+Belgium,2002,Winter,0,1,2
+Belgium,2004,Summer,1350,0,1
+Belgium,2006,Winter,0,1,2
+Belgium,2008,Summer,920,0,0
+Belgium,2010,Winter,0,1,2
+Belgium,2012,Summer,2250,0,0
+Belgium,2014,Winter,0,1,2
+Belgium,2016,Summer,4800,0,0
+Belgium,2018,Winter,370,1,2
+Belgium,2020,Summer,5600,0,0
+Belgium,2022,Winter,820,1,2
+Belize,1992,Summer,0,0,1
+Belize,1996,Summer,0,0,1
+Belize,2008,Summer,0,0,0
+Belize,2012,Summer,0,0,0
+Belize,2016,Summer,0,0,0
+Belize,2020,Summer,0,0,0
+Benin,1992,Summer,0,0,1
+Benin,2000,Summer,0,0,1
+Benin,2004,Summer,0,0,1
+Benin,2008,Summer,0,0,0
+Benin,2012,Summer,0,0,0
+Benin,2016,Summer,0,0,0
+Benin,2020,Summer,0,0,0
+Bermuda,1992,Summer,0,0,1
+Bermuda,1994,Winter,0,1,2
+Bermuda,1996,Summer,0,0,1
+Bermuda,1998,Winter,0,1,2
+Bermuda,2000,Summer,0,0,1
+Bermuda,2002,Winter,0,1,2
+Bermuda,2004,Summer,0,0,1
+Bermuda,2006,Winter,0,1,2
+Bermuda,2008,Summer,0,0,0
+Bermuda,2010,Winter,0,1,2
+Bermuda,2012,Summer,0,0,0
+Bermuda,2014,Winter,0,1,2
+Bermuda,2016,Summer,0,0,0
+Bermuda,2018,Winter,0,1,2
+Bermuda,2020,Summer,20,0,0
+Bhutan,1992,Summer,0,0,1
+Bhutan,1996,Summer,0,0,1
+Bhutan,2000,Summer,0,0,1
+Bhutan,2004,Summer,0,0,1
+Bhutan,2008,Summer,0,0,0
+Bhutan,2012,Summer,0,0,0
+Bhutan,2016,Summer,0,0,0
+Bhutan,2020,Summer,0,0,0
+Bolivia,1992,Summer,0,0,1
+Bolivia,1996,Summer,0,0,1
+Bolivia,2000,Summer,0,0,1
+Bolivia,2004,Summer,0,0,1
+Bolivia,2008,Summer,0,0,0
+Bolivia,2012,Summer,0,0,0
+Bolivia,2016,Summer,0,0,0
+Bolivia,2018,Winter,0,1,2
+Bolivia,2020,Summer,0,0,0
+Bolivia,2022,Winter,0,1,2
+Bosnia and Herzegovina,1992,Summer,0,0,1
+Bosnia and Herzegovina,1994,Winter,0,1,2
+Bosnia and Herzegovina,1996,Summer,0,0,1
+Bosnia and Herzegovina,1998,Winter,0,1,2
+Bosnia and Herzegovina,2000,Summer,0,0,1
+Bosnia and Herzegovina,2002,Winter,0,1,2
+Bosnia and Herzegovina,2004,Summer,0,0,1
+Bosnia and Herzegovina,2006,Winter,0,1,2
+Bosnia and Herzegovina,2008,Summer,0,0,0
+Bosnia and Herzegovina,2010,Winter,0,1,2
+Bosnia and Herzegovina,2012,Summer,0,0,0
+Bosnia and Herzegovina,2014,Winter,0,1,2
+Bosnia and Herzegovina,2016,Summer,0,0,0
+Bosnia and Herzegovina,2018,Winter,0,1,2
+Bosnia and Herzegovina,2020,Summer,0,0,0
+Bosnia and Herzegovina,2022,Winter,0,1,2
+Botswana,1992,Summer,0,0,1
+Botswana,1996,Summer,0,0,1
+Botswana,2000,Summer,0,0,1
+Botswana,2004,Summer,0,0,1
+Botswana,2008,Summer,0,0,0
+Botswana,2012,Summer,30,0,0
+Botswana,2016,Summer,0,0,0
+Botswana,2020,Summer,50,0,0
+Brazil,1992,Summer,855,0,1
+Brazil,1994,Winter,0,1,2
+Brazil,1996,Summer,8835,0,1
+Brazil,1998,Winter,0,1,2
+Brazil,2000,Summer,12880,0,1
+Brazil,2002,Winter,0,1,2
+Brazil,2004,Summer,15730,0,1
+Brazil,2006,Winter,0,1,2
+Brazil,2008,Summer,30450,0,0
+Brazil,2010,Winter,0,1,2
+Brazil,2012,Summer,28200,0,0
+Brazil,2014,Winter,0,1,2
+Brazil,2016,Summer,57270,0,0
+Brazil,2018,Winter,0,1,2
+Brazil,2020,Summer,32200,0,0
+Brazil,2022,Winter,0,1,2
+British Virgin Islands,1992,Summer,0,0,1
+British Virgin Islands,1996,Summer,0,0,1
+British Virgin Islands,2014,Winter,0,1,2
+British Virgin Islands,2016,Summer,0,0,0
+Brunei,1996,Summer,0,0,1
+Brunei,2000,Summer,0,0,1
+Brunei,2012,Summer,0,0,0
+Brunei,2016,Summer,0,0,0
+Bulgaria,1992,Summer,6290,0,1
+Bulgaria,1994,Winter,0,1,2
+Bulgaria,1996,Summer,6720,0,1
+Bulgaria,1998,Winter,145,1,2
+Bulgaria,2000,Summer,8970,0,1
+Bulgaria,2002,Winter,1320,1,2
+Bulgaria,2004,Summer,9120,0,1
+Bulgaria,2006,Winter,350,1,2
+Bulgaria,2008,Summer,2250,0,0
+Bulgaria,2010,Winter,0,1,2
+Bulgaria,2012,Summer,1440,0,0
+Bulgaria,2014,Winter,0,1,2
+Bulgaria,2016,Summer,1350,0,0
+Bulgaria,2018,Winter,0,1,2
+Bulgaria,2020,Summer,1740,0,0
+Bulgaria,2022,Winter,0,1,2
+Burkina Faso,1992,Summer,0,0,1
+Burkina Faso,1996,Summer,0,0,1
+Burkina Faso,2000,Summer,0,0,1
+Burkina Faso,2004,Summer,0,0,1
+Burkina Faso,2008,Summer,0,0,0
+Burkina Faso,2012,Summer,0,0,0
+Burkina Faso,2016,Summer,0,0,0
+Burkina Faso,2020,Summer,50,0,0
+Burundi,1996,Summer,20,0,1
+Burundi,2000,Summer,0,0,1
+Burundi,2004,Summer,0,0,1
+Burundi,2008,Summer,0,0,0
+Burundi,2012,Summer,0,0,0
+Burundi,2016,Summer,80,0,0
+Burundi,2020,Summer,0,0,0
+Cambodia,1996,Summer,0,0,1
+Cambodia,2000,Summer,0,0,1
+Cambodia,2004,Summer,0,0,1
+Cambodia,2008,Summer,0,0,0
+Cambodia,2012,Summer,0,0,0
+Cambodia,2016,Summer,0,0,0
+Cameroon,1992,Summer,0,0,1
+Cameroon,1996,Summer,0,0,1
+Cameroon,2000,Summer,50,0,1
+Cameroon,2002,Winter,0,1,2
+Cameroon,2004,Summer,80,0,1
+Cameroon,2008,Summer,130,0,0
+Cameroon,2012,Summer,150,0,0
+Cameroon,2016,Summer,0,0,0
+Cameroon,2020,Summer,0,0,0
+Canada,1992,Summer,11655,0,1
+Canada,1994,Winter,7490,1,2
+Canada,1996,Summer,25320,0,1
+Canada,1998,Winter,11280,1,2
+Canada,2000,Summer,27200,0,1
+Canada,2002,Winter,26100,1,2
+Canada,2004,Summer,24640,0,1
+Canada,2006,Winter,53820,1,2
+Canada,2008,Summer,44660,0,0
+Canada,2010,Winter,60610,1,2
+Canada,2012,Summer,40400,0,0
+Canada,2014,Winter,65880,1,2
+Canada,2016,Summer,48240,0,0
+Canada,2018,Winter,81260,1,2
+Canada,2020,Summer,55350,0,0
+Canada,2022,Winter,66420,1,2
+Cape Verde,1996,Summer,0,0,1
+Cape Verde,2000,Summer,0,0,1
+Cape Verde,2004,Summer,0,0,1
+Cape Verde,2008,Summer,0,0,0
+Cape Verde,2012,Summer,0,0,0
+Cape Verde,2016,Summer,0,0,0
+Cape Verde,2020,Summer,0,0,0
+Cayman Islands,1992,Summer,0,0,1
+Cayman Islands,1996,Summer,0,0,1
+Cayman Islands,2000,Summer,0,0,1
+Cayman Islands,2004,Summer,0,0,1
+Cayman Islands,2008,Summer,0,0,0
+Cayman Islands,2010,Winter,0,1,2
+Cayman Islands,2012,Summer,0,0,0
+Cayman Islands,2014,Winter,0,1,2
+Cayman Islands,2016,Summer,0,0,0
+Central African Republic,1992,Summer,0,0,1
+Central African Republic,1996,Summer,0,0,1
+Central African Republic,2000,Summer,0,0,1
+Central African Republic,2004,Summer,0,0,1
+Central African Republic,2008,Summer,0,0,0
+Central African Republic,2012,Summer,0,0,0
+Central African Republic,2016,Summer,0,0,0
+Chad,1992,Summer,0,0,1
+Chad,2004,Summer,0,0,1
+Chad,2012,Summer,0,0,0
+Chad,2020,Summer,0,0,0
+Chile,1992,Summer,0,0,1
+Chile,1994,Winter,0,1,2
+Chile,1996,Summer,0,0,1
+Chile,1998,Winter,0,1,2
+Chile,2000,Summer,230,0,1
+Chile,2002,Winter,0,1,2
+Chile,2004,Summer,880,0,1
+Chile,2006,Winter,0,1,2
+Chile,2008,Summer,230,0,0
+Chile,2010,Winter,0,1,2
+Chile,2012,Summer,0,0,0
+Chile,2014,Winter,0,1,2
+Chile,2016,Summer,0,0,0
+Chile,2018,Winter,0,1,2
+Chile,2020,Summer,0,0,0
+Chile,2022,Winter,0,1,2
+Chinese Taipei,1992,Summer,50,0,1
+Chinese Taipei,1994,Winter,0,1,2
+Chinese Taipei,1996,Summer,340,0,1
+Chinese Taipei,1998,Winter,0,1,2
+Chinese Taipei,2000,Summer,2025,0,1
+Chinese Taipei,2002,Winter,0,1,2
+Chinese Taipei,2004,Summer,2850,0,1
+Chinese Taipei,2006,Winter,0,1,2
+Chinese Taipei,2008,Summer,1840,0,0
+Chinese Taipei,2010,Winter,0,1,2
+Chinese Taipei,2012,Summer,900,0,0
+Chinese Taipei,2014,Winter,0,1,2
+Chinese Taipei,2016,Summer,1620,0,0
+Chinese Taipei,2018,Winter,0,1,2
+Chinese Taipei,2020,Summer,8540,0,0
+Chinese Taipei,2022,Winter,0,1,2
+Colombia,1992,Summer,60,0,1
+Colombia,1996,Summer,0,0,1
+Colombia,2000,Summer,355,0,1
+Colombia,2004,Summer,1020,0,1
+Colombia,2008,Summer,1860,0,0
+Colombia,2010,Winter,0,1,2
+Colombia,2012,Summer,6570,0,0
+Colombia,2016,Summer,6880,0,0
+Colombia,2018,Winter,0,1,2
+Colombia,2020,Summer,2850,0,0
+Colombia,2022,Winter,0,1,2
+Comoros,2004,Summer,0,0,1
+Comoros,2008,Summer,0,0,0
+Comoros,2012,Summer,0,0,0
+Comoros,2016,Summer,0,0,0
+Comoros,2020,Summer,0,0,0
+Congo,1996,Summer,0,0,1
+Congo,2000,Summer,0,0,1
+Congo,2004,Summer,0,0,1
+Congo,2008,Summer,0,0,0
+Congo,2012,Summer,0,0,0
+Congo,2016,Summer,0,0,0
+Cook Islands,1992,Summer,0,0,1
+Cook Islands,1996,Summer,0,0,1
+Cook Islands,2000,Summer,0,0,1
+Cook Islands,2004,Summer,0,0,1
+Cook Islands,2008,Summer,0,0,0
+Cook Islands,2012,Summer,0,0,0
+Cook Islands,2016,Summer,0,0,0
+Cook Islands,2020,Summer,0,0,0
+Costa Rica,1992,Summer,0,0,1
+Costa Rica,1996,Summer,60,0,1
+Costa Rica,2000,Summer,130,0,1
+Costa Rica,2002,Winter,0,1,2
+Costa Rica,2004,Summer,0,0,1
+Costa Rica,2006,Winter,0,1,2
+Costa Rica,2008,Summer,0,0,0
+Costa Rica,2012,Summer,0,0,0
+Costa Rica,2016,Summer,0,0,0
+Costa Rica,2020,Summer,0,0,0
+Croatia,1992,Summer,160,0,1
+Croatia,1994,Winter,0,1,2
+Croatia,1996,Summer,460,0,1
+Croatia,1998,Winter,0,1,2
+Croatia,2000,Summer,660,0,1
+Croatia,2002,Winter,920,1,2
+Croatia,2004,Summer,3500,0,1
+Croatia,2006,Winter,1290,1,2
+Croatia,2008,Summer,3050,0,0
+Croatia,2010,Winter,1020,1,2
+Croatia,2012,Summer,2880,0,0
+Croatia,2014,Winter,250,1,2
+Croatia,2016,Summer,5880,0,0
+Croatia,2018,Winter,0,1,2
+Croatia,2020,Summer,4730,0,0
+Croatia,2022,Winter,0,1,2
+Cuba,1992,Summer,9765,0,1
+Cuba,1996,Summer,11375,0,1
+Cuba,2000,Summer,36900,0,1
+Cuba,2004,Summer,26040,0,1
+Cuba,2008,Summer,27300,0,0
+Cuba,2012,Summer,12900,0,0
+Cuba,2016,Summer,8910,0,0
+Cuba,2020,Summer,9600,0,0
+Cyprus,1992,Summer,0,0,1
+Cyprus,1994,Winter,0,1,2
+Cyprus,1996,Summer,0,0,1
+Cyprus,1998,Winter,0,1,2
+Cyprus,2000,Summer,0,0,1
+Cyprus,2002,Winter,0,1,2
+Cyprus,2004,Summer,0,0,1
+Cyprus,2006,Winter,0,1,2
+Cyprus,2008,Summer,0,0,0
+Cyprus,2010,Winter,0,1,2
+Cyprus,2012,Summer,100,0,0
+Cyprus,2014,Winter,0,1,2
+Cyprus,2016,Summer,0,0,0
+Cyprus,2018,Winter,0,1,2
+Cyprus,2020,Summer,0,0,0
+Cyprus,2022,Winter,0,1,2
+Czech Republic,1994,Winter,0,1,2
+Czech Republic,1996,Summer,6825,0,1
+Czech Republic,1998,Winter,1140,1,2
+Czech Republic,2000,Summer,7470,0,1
+Czech Republic,2002,Winter,3510,1,2
+Czech Republic,2004,Summer,10500,0,1
+Czech Republic,2006,Winter,4880,1,2
+Czech Republic,2008,Summer,8080,0,0
+Czech Republic,2010,Winter,7560,1,2
+Czech Republic,2012,Summer,11760,0,0
+Czech Republic,2014,Winter,10160,1,2
+Czech Republic,2016,Summer,11760,0,0
+Czech Republic,2018,Winter,9730,1,2
+Czech Republic,2020,Summer,10270,0,0
+Czech Republic,2022,Winter,2640,1,2
+Czechoslovakia,1992,Summer,2560,0,1
+CÃ´te d'Ivoire,2020,Summer,10,0,0
+Democratic People's Republic of Korea,1992,Summer,1700,0,1
+Democratic People's Republic of Korea,1996,Summer,650,0,1
+Democratic People's Republic of Korea,1998,Winter,0,1,2
+Democratic People's Republic of Korea,2000,Summer,1080,0,1
+Democratic People's Republic of Korea,2002,Winter,0,1,2
+Democratic People's Republic of Korea,2004,Summer,1700,0,1
+Democratic People's Republic of Korea,2006,Winter,0,1,2
+Democratic People's Republic of Korea,2008,Summer,2880,0,0
+Democratic People's Republic of Korea,2010,Winter,0,1,2
+Democratic People's Republic of Korea,2012,Summer,2450,0,0
+Democratic People's Republic of Korea,2016,Summer,2310,0,0
+Democratic People's Republic of Korea,2018,Winter,0,1,2
+Democratic Republic of Timor-Leste,2004,Summer,0,0,1
+Democratic Republic of Timor-Leste,2008,Summer,0,0,0
+Democratic Republic of Timor-Leste,2012,Summer,0,0,0
+Democratic Republic of Timor-Leste,2014,Winter,0,1,2
+Democratic Republic of Timor-Leste,2016,Summer,0,0,0
+Democratic Republic of Timor-Leste,2018,Winter,0,1,2
+Democratic Republic of Timor-Leste,2022,Winter,0,1,2
+Democratic Republic of the Congo,1992,Summer,0,0,1
+Democratic Republic of the Congo,1996,Summer,0,0,1
+Democratic Republic of the Congo,2000,Summer,0,0,1
+Democratic Republic of the Congo,2004,Summer,0,0,1
+Democratic Republic of the Congo,2008,Summer,0,0,0
+Democratic Republic of the Congo,2012,Summer,0,0,0
+Democratic Republic of the Congo,2016,Summer,0,0,0
+Democratic Republic of the Congo,2020,Summer,0,0,0
+Denmark,1992,Summer,1480,0,1
+Denmark,1994,Winter,0,1,2
+Denmark,1996,Summer,2400,0,1
+Denmark,1998,Winter,75,1,2
+Denmark,2000,Summer,3840,0,1
+Denmark,2002,Winter,0,1,2
+Denmark,2004,Summer,6700,0,1
+Denmark,2006,Winter,0,1,2
+Denmark,2008,Summer,6200,0,0
+Denmark,2010,Winter,0,1,2
+Denmark,2012,Summer,10790,0,0
+Denmark,2014,Winter,0,1,2
+Denmark,2016,Summer,13860,0,0
+Denmark,2018,Winter,0,1,2
+Denmark,2020,Summer,8960,0,0
+Denmark,2022,Winter,0,1,2
+Djibouti,1992,Summer,0,0,1
+Djibouti,1996,Summer,0,0,1
+Djibouti,2000,Summer,0,0,1
+Djibouti,2012,Summer,0,0,0
+Djibouti,2016,Summer,0,0,0
+Djibouti,2020,Summer,0,0,0
+Dominica,1996,Summer,0,0,1
+Dominica,2000,Summer,0,0,1
+Dominica,2014,Winter,0,1,2
+Dominica,2020,Summer,0,0,0
+Dominican Republic,1992,Summer,0,0,1
+Dominican Republic,1996,Summer,0,0,1
+Dominican Republic,2000,Summer,0,0,1
+Dominican Republic,2004,Summer,130,0,1
+Dominican Republic,2008,Summer,360,0,0
+Dominican Republic,2012,Summer,340,0,0
+Dominican Republic,2016,Summer,160,0,0
+Dominican Republic,2020,Summer,1200,0,0
+Ecuador,1992,Summer,0,0,1
+Ecuador,1996,Summer,100,0,1
+Ecuador,2000,Summer,0,0,1
+Ecuador,2004,Summer,0,0,1
+Ecuador,2008,Summer,220,0,0
+Ecuador,2012,Summer,0,0,0
+Ecuador,2016,Summer,0,0,0
+Ecuador,2018,Winter,0,1,2
+Ecuador,2020,Summer,1230,0,0
+Ecuador,2022,Winter,0,1,2
+Egypt,1992,Summer,0,0,1
+Egypt,1996,Summer,0,0,1
+Egypt,2000,Summer,0,0,1
+Egypt,2004,Summer,2400,0,1
+Egypt,2008,Summer,1240,0,0
+Egypt,2012,Summer,3240,0,0
+Egypt,2016,Summer,2610,0,0
+Egypt,2020,Summer,5460,0,0
+El Salvador,1992,Summer,0,0,1
+El Salvador,1996,Summer,0,0,1
+El Salvador,2000,Summer,0,0,1
+El Salvador,2004,Summer,0,0,1
+El Salvador,2008,Summer,0,0,0
+El Salvador,2012,Summer,0,0,0
+El Salvador,2016,Summer,0,0,0
+El Salvador,2020,Summer,0,0,0
+Equatorial Guinea,2000,Summer,0,0,1
+Equatorial Guinea,2004,Summer,0,0,1
+Equatorial Guinea,2008,Summer,0,0,0
+Equatorial Guinea,2016,Summer,0,0,0
+Eritrea,2004,Summer,30,0,1
+Eritrea,2008,Summer,0,0,0
+Eritrea,2012,Summer,0,0,0
+Eritrea,2016,Summer,0,0,0
+Eritrea,2018,Winter,0,1,2
+Eritrea,2020,Summer,0,0,0
+Eritrea,2022,Winter,0,1,2
+Estonia,1992,Summer,270,0,1
+Estonia,1994,Winter,0,1,2
+Estonia,1996,Summer,0,0,1
+Estonia,1998,Winter,0,1,2
+Estonia,2000,Summer,885,0,1
+Estonia,2002,Winter,1200,1,2
+Estonia,2004,Summer,930,0,1
+Estonia,2006,Winter,1500,1,2
+Estonia,2008,Summer,1170,0,0
+Estonia,2010,Winter,510,1,2
+Estonia,2012,Summer,480,0,0
+Estonia,2014,Winter,0,1,2
+Estonia,2016,Summer,360,0,0
+Estonia,2018,Winter,0,1,2
+Estonia,2020,Summer,560,0,0
+Estonia,2022,Winter,620,1,2
+Eswatini,2020,Summer,0,0,0
+Ethiopia,1992,Summer,225,0,1
+Ethiopia,1996,Summer,210,0,1
+Ethiopia,2000,Summer,1480,0,1
+Ethiopia,2004,Summer,1470,0,1
+Ethiopia,2006,Winter,0,1,2
+Ethiopia,2008,Summer,1470,0,0
+Ethiopia,2010,Winter,0,1,2
+Ethiopia,2012,Summer,2100,0,0
+Ethiopia,2016,Summer,2240,0,0
+Ethiopia,2020,Summer,1000,0,0
+Federated States of Micronesia,2000,Summer,0,0,1
+Federated States of Micronesia,2004,Summer,0,0,1
+Federated States of Micronesia,2008,Summer,0,0,0
+Federated States of Micronesia,2012,Summer,0,0,0
+Federated States of Micronesia,2016,Summer,0,0,0
+Fiji,1992,Summer,0,0,1
+Fiji,1994,Winter,0,1,2
+Fiji,1996,Summer,0,0,1
+Fiji,2000,Summer,0,0,1
+Fiji,2002,Winter,0,1,2
+Fiji,2004,Summer,0,0,1
+Fiji,2008,Summer,0,0,0
+Fiji,2012,Summer,0,0,0
+Fiji,2016,Summer,120,0,0
+Fiji,2020,Summer,100,0,0
+Finland,1992,Summer,1175,0,1
+Finland,1994,Winter,2280,1,2
+Finland,1996,Summer,1540,0,1
+Finland,1998,Winter,4860,1,2
+Finland,2000,Summer,2600,0,1
+Finland,2002,Winter,7280,1,2
+Finland,2004,Summer,920,0,1
+Finland,2006,Winter,8200,1,2
+Finland,2008,Summer,2650,0,0
+Finland,2010,Winter,4600,1,2
+Finland,2012,Summer,1620,0,0
+Finland,2014,Winter,6930,1,2
+Finland,2016,Summer,470,0,0
+Finland,2018,Winter,6360,1,2
+Finland,2020,Summer,560,0,0
+Finland,2022,Winter,8370,1,2
+France,1992,Summer,19680,0,1
+France,1994,Winter,2975,1,2
+France,1996,Summer,45510,0,1
+France,1998,Winter,5400,1,2
+France,2000,Summer,88200,0,1
+France,2002,Winter,15000,1,2
+France,2004,Summer,82440,0,1
+France,2006,Winter,12150,1,2
+France,2008,Summer,112050,0,0
+France,2010,Winter,17930,1,2
+France,2012,Summer,88920,0,0
+France,2014,Winter,24750,1,2
+France,2016,Summer,111600,0,0
+France,2018,Winter,28050,1,2
+France,2020,Summer,87690,0,0
+France,2022,Winter,22050,1,2
+Gabon,1992,Summer,0,0,1
+Gabon,1996,Summer,0,0,1
+Gabon,2000,Summer,0,0,1
+Gabon,2004,Summer,0,0,1
+Gabon,2008,Summer,0,0,0
+Gabon,2012,Summer,50,0,0
+Gabon,2016,Summer,0,0,0
+Gabon,2020,Summer,0,0,0
+Gambia,1992,Summer,0,0,1
+Gambia,2008,Summer,0,0,0
+Gambia,2016,Summer,0,0,0
+Gambia,2020,Summer,0,0,0
+Georgia,1994,Winter,0,1,2
+Georgia,1996,Summer,320,0,1
+Georgia,1998,Winter,0,1,2
+Georgia,2000,Summer,1890,0,1
+Georgia,2002,Winter,0,1,2
+Georgia,2004,Summer,1040,0,1
+Georgia,2006,Winter,0,1,2
+Georgia,2008,Summer,2170,0,0
+Georgia,2010,Winter,0,1,2
+Georgia,2012,Summer,2040,0,0
+Georgia,2014,Winter,0,1,2
+Georgia,2016,Summer,2730,0,0
+Georgia,2018,Winter,0,1,2
+Georgia,2020,Summer,2240,0,0
+Georgia,2022,Winter,0,1,2
+Germany,1992,Summer,79580,0,1
+Germany,1994,Winter,17000,1,2
+Germany,1996,Summer,112180,0,1
+Germany,1998,Winter,24960,1,2
+Germany,2000,Summer,176960,0,3
+Germany,2002,Winter,69200,1,2
+Germany,2004,Summer,168720,0,3
+Germany,2006,Winter,53760,1,2
+Germany,2008,Summer,130340,0,3
+Germany,2010,Winter,66240,1,2
+Germany,2012,Summer,138670,0,3
+Germany,2014,Winter,41370,1,2
+Germany,2016,Summer,130560,0,3
+Germany,2018,Winter,68040,1,2
+Germany,2020,Summer,114540,0,0
+Germany,2022,Winter,63000,1,2
+Ghana,1996,Summer,0,0,1
+Ghana,2000,Summer,0,0,1
+Ghana,2004,Summer,0,0,1
+Ghana,2008,Summer,0,0,0
+Ghana,2010,Winter,0,1,2
+Ghana,2012,Summer,0,0,0
+Ghana,2016,Summer,0,0,0
+Ghana,2018,Winter,0,1,2
+Ghana,2020,Summer,60,0,0
+Ghana,2022,Winter,0,1,2
+Great Britain,1992,Summer,13860,0,1
+Great Britain,1994,Winter,585,1,2
+Great Britain,1996,Summer,16650,0,1
+Great Britain,1998,Winter,140,1,2
+Great Britain,2000,Summer,53785,0,1
+Great Britain,2002,Winter,940,1,2
+Great Britain,2004,Summer,66970,0,1
+Great Britain,2006,Winter,400,1,2
+Great Britain,2008,Summer,124320,0,3
+Great Britain,2010,Winter,550,1,2
+Great Britain,2012,Summer,241780,0,3
+Great Britain,2014,Winter,2700,1,2
+Great Britain,2016,Summer,185250,0,3
+Great Britain,2018,Winter,3200,1,2
+Great Britain,2020,Summer,166140,0,3
+Great Britain,2022,Winter,1060,1,2
+Greece,1992,Summer,290,0,1
+Greece,1994,Winter,0,1,2
+Greece,1996,Summer,3080,0,1
+Greece,1998,Winter,0,1,2
+Greece,2000,Summer,10530,0,1
+Greece,2002,Winter,0,1,2
+Greece,2004,Summer,38760,0,1
+Greece,2006,Winter,0,1,2
+Greece,2008,Summer,3400,0,0
+Greece,2010,Winter,0,1,2
+Greece,2012,Summer,1920,0,0
+Greece,2014,Winter,0,1,2
+Greece,2016,Summer,4270,0,0
+Greece,2018,Winter,0,1,2
+Greece,2020,Summer,1640,0,0
+Greece,2022,Winter,0,1,2
+Grenada,2000,Summer,0,0,1
+Grenada,2004,Summer,0,0,1
+Grenada,2008,Summer,0,0,0
+Grenada,2012,Summer,50,0,0
+Grenada,2016,Summer,60,0,0
+Grenada,2020,Summer,20,0,0
+Guam,1992,Summer,0,0,1
+Guam,1996,Summer,0,0,1
+Guam,2000,Summer,0,0,1
+Guam,2004,Summer,0,0,1
+Guam,2008,Summer,0,0,0
+Guam,2012,Summer,0,0,0
+Guam,2016,Summer,0,0,0
+Guam,2020,Summer,0,0,0
+Guatemala,1992,Summer,0,0,1
+Guatemala,1996,Summer,0,0,1
+Guatemala,2000,Summer,0,0,1
+Guatemala,2004,Summer,0,0,1
+Guatemala,2008,Summer,0,0,0
+Guatemala,2012,Summer,210,0,0
+Guatemala,2016,Summer,0,0,0
+Guatemala,2020,Summer,0,0,0
+Guinea,1992,Summer,0,0,1
+Guinea,1996,Summer,0,0,1
+Guinea,2000,Summer,0,0,1
+Guinea,2004,Summer,0,0,1
+Guinea,2008,Summer,0,0,0
+Guinea,2012,Summer,0,0,0
+Guinea,2016,Summer,0,0,0
+Guinea,2020,Summer,0,0,0
+Guinea-Bissau,1996,Summer,0,0,1
+Guinea-Bissau,2000,Summer,0,0,1
+Guinea-Bissau,2004,Summer,0,0,1
+Guinea-Bissau,2008,Summer,0,0,0
+Guinea-Bissau,2012,Summer,0,0,0
+Guinea-Bissau,2016,Summer,0,0,0
+Guinea-Bissau,2020,Summer,0,0,0
+Guyana,1992,Summer,0,0,1
+Guyana,1996,Summer,0,0,1
+Guyana,2004,Summer,0,0,1
+Guyana,2008,Summer,0,0,0
+Guyana,2012,Summer,0,0,0
+Guyana,2016,Summer,0,0,0
+Guyana,2020,Summer,0,0,0
+Haiti,1992,Summer,0,0,1
+Haiti,1996,Summer,0,0,1
+Haiti,2000,Summer,0,0,1
+Haiti,2004,Summer,0,0,1
+Haiti,2008,Summer,0,0,0
+Haiti,2012,Summer,0,0,0
+Haiti,2016,Summer,0,0,0
+Haiti,2020,Summer,0,0,0
+Haiti,2022,Winter,0,1,2
+Honduras,1992,Summer,0,0,1
+Honduras,1996,Summer,0,0,1
+Honduras,2000,Summer,0,0,1
+Honduras,2004,Summer,0,0,1
+Honduras,2008,Summer,0,0,0
+Honduras,2012,Summer,0,0,0
+Honduras,2016,Summer,0,0,0
+Honduras,2020,Summer,0,0,0
+"Hong Kong, China",1992,Summer,0,0,1
+"Hong Kong, China",1996,Summer,125,0,1
+"Hong Kong, China",2000,Summer,0,0,1
+"Hong Kong, China",2002,Winter,0,1,2
+"Hong Kong, China",2004,Summer,680,0,1
+"Hong Kong, China",2006,Winter,0,1,2
+"Hong Kong, China",2008,Summer,0,0,0
+"Hong Kong, China",2010,Winter,0,1,2
+"Hong Kong, China",2012,Summer,360,0,0
+"Hong Kong, China",2014,Winter,0,1,2
+"Hong Kong, China",2016,Summer,0,0,0
+"Hong Kong, China",2018,Winter,0,1,2
+"Hong Kong, China",2020,Summer,2220,0,0
+"Hong Kong, China",2022,Winter,0,1,2
+Hungary,1992,Summer,16585,0,1
+Hungary,1994,Winter,0,1,2
+Hungary,1996,Summer,18630,0,1
+Hungary,1998,Winter,0,1,2
+Hungary,2000,Summer,23310,0,1
+Hungary,2002,Winter,0,1,2
+Hungary,2004,Summer,27930,0,1
+Hungary,2006,Winter,0,1,2
+Hungary,2008,Summer,15240,0,0
+Hungary,2010,Winter,0,1,2
+Hungary,2012,Summer,24800,0,0
+Hungary,2014,Winter,0,1,2
+Hungary,2016,Summer,23200,0,0
+Hungary,2018,Winter,360,1,2
+Hungary,2020,Summer,22680,0,0
+Hungary,2022,Winter,870,1,2
+Iceland,1992,Summer,0,0,1
+Iceland,1994,Winter,0,1,2
+Iceland,1996,Summer,0,0,1
+Iceland,1998,Winter,0,1,2
+Iceland,2000,Summer,125,0,1
+Iceland,2002,Winter,0,1,2
+Iceland,2004,Summer,0,0,1
+Iceland,2006,Winter,0,1,2
+Iceland,2008,Summer,150,0,0
+Iceland,2010,Winter,0,1,2
+Iceland,2012,Summer,0,0,0
+Iceland,2014,Winter,0,1,2
+Iceland,2016,Summer,0,0,0
+Iceland,2018,Winter,0,1,2
+Iceland,2020,Summer,0,0,0
+Iceland,2022,Winter,0,1,2
+Independent Olympic Athletes,1992,Summer,360,0,1
+Independent Olympic Athletes,2000,Summer,0,0,1
+Independent Olympic Athletes,2012,Summer,0,0,0
+Independent Olympic Athletes,2014,Winter,0,1,2
+Independent Olympic Athletes,2016,Summer,180,0,0
+India,1992,Summer,0,0,1
+India,1996,Summer,150,0,1
+India,1998,Winter,0,1,2
+India,2000,Summer,225,0,1
+India,2002,Winter,0,1,2
+India,2004,Summer,460,0,1
+India,2006,Winter,0,1,2
+India,2008,Summer,1560,0,0
+India,2010,Winter,0,1,2
+India,2012,Summer,3900,0,0
+India,2014,Winter,0,1,2
+India,2016,Summer,1460,0,0
+India,2018,Winter,0,1,2
+India,2020,Summer,5180,0,0
+India,2022,Winter,0,1,2
+Indonesia,1992,Summer,660,0,1
+Indonesia,1996,Summer,990,0,1
+Indonesia,2000,Summer,2360,0,1
+Indonesia,2004,Summer,1400,0,1
+Indonesia,2008,Summer,1520,0,0
+Indonesia,2012,Summer,540,0,0
+Indonesia,2016,Summer,920,0,0
+Indonesia,2020,Summer,1260,0,0
+Iraq,1992,Summer,0,0,1
+Iraq,1996,Summer,0,0,1
+Iraq,2000,Summer,0,0,1
+Iraq,2004,Summer,0,0,1
+Iraq,2008,Summer,0,0,0
+Iraq,2012,Summer,0,0,0
+Iraq,2016,Summer,0,0,0
+Iraq,2020,Summer,0,0,0
+Ireland,1992,Summer,250,0,1
+Ireland,1996,Summer,1000,0,1
+Ireland,1998,Winter,0,1,2
+Ireland,2000,Summer,280,0,1
+Ireland,2002,Winter,0,1,2
+Ireland,2004,Summer,0,0,1
+Ireland,2006,Winter,0,1,2
+Ireland,2008,Summer,1200,0,0
+Ireland,2010,Winter,0,1,2
+Ireland,2012,Summer,3420,0,0
+Ireland,2014,Winter,0,1,2
+Ireland,2016,Summer,1680,0,0
+Ireland,2018,Winter,0,1,2
+Ireland,2020,Summer,3000,0,0
+Ireland,2022,Winter,0,1,2
+Islamic Republic of Iran,1992,Summer,375,0,1
+Islamic Republic of Iran,1996,Summer,255,0,1
+Islamic Republic of Iran,1998,Winter,0,1,2
+Islamic Republic of Iran,2000,Summer,1120,0,1
+Islamic Republic of Iran,2002,Winter,0,1,2
+Islamic Republic of Iran,2004,Summer,1860,0,1
+Islamic Republic of Iran,2006,Winter,0,1,2
+Islamic Republic of Iran,2008,Summer,800,0,0
+Islamic Republic of Iran,2010,Winter,0,1,2
+Islamic Republic of Iran,2012,Summer,6630,0,0
+Islamic Republic of Iran,2014,Winter,0,1,2
+Islamic Republic of Iran,2016,Summer,3840,0,0
+Islamic Republic of Iran,2018,Winter,0,1,2
+Islamic Republic of Iran,2020,Summer,3080,0,0
+Islamic Republic of Iran,2022,Winter,0,1,2
+Israel,1992,Summer,160,0,1
+Israel,1994,Winter,0,1,2
+Israel,1996,Summer,135,0,1
+Israel,1998,Winter,0,1,2
+Israel,2000,Summer,250,0,1
+Israel,2002,Winter,0,1,2
+Israel,2004,Summer,580,0,1
+Israel,2006,Winter,0,1,2
+Israel,2008,Summer,400,0,0
+Israel,2010,Winter,0,1,2
+Israel,2012,Summer,0,0,0
+Israel,2014,Winter,0,1,2
+Israel,2016,Summer,920,0,0
+Israel,2018,Winter,0,1,2
+Israel,2020,Summer,1960,0,0
+Israel,2022,Winter,0,1,2
+Italy,1992,Summer,9700,0,1
+Italy,1994,Winter,15985,1,2
+Italy,1996,Summer,40280,0,1
+Italy,1998,Winter,7425,1,2
+Italy,2000,Summer,67640,0,1
+Italy,2002,Winter,23240,1,2
+Italy,2004,Summer,71060,0,1
+Italy,2006,Winter,25350,1,2
+Italy,2008,Summer,62440,0,0
+Italy,2010,Winter,8550,1,2
+Italy,2012,Summer,60900,0,0
+Italy,2014,Winter,14400,1,2
+Italy,2016,Summer,67580,0,0
+Italy,2018,Winter,19400,1,2
+Italy,2020,Summer,97180,0,0
+Italy,2022,Winter,35910,1,2
+Ivory Coast,1992,Summer,0,0,1
+Ivory Coast,1996,Summer,0,0,1
+Ivory Coast,2000,Summer,0,0,1
+Ivory Coast,2004,Summer,0,0,1
+Ivory Coast,2008,Summer,0,0,0
+Ivory Coast,2012,Summer,0,0,0
+Ivory Coast,2016,Summer,20,0,0
+Jamaica,1992,Summer,260,0,1
+Jamaica,1994,Winter,0,1,2
+Jamaica,1996,Summer,810,0,1
+Jamaica,1998,Winter,0,1,2
+Jamaica,2000,Summer,1530,0,1
+Jamaica,2002,Winter,0,1,2
+Jamaica,2004,Summer,1300,0,1
+Jamaica,2008,Summer,3100,0,0
+Jamaica,2010,Winter,0,1,2
+Jamaica,2012,Summer,3600,0,0
+Jamaica,2014,Winter,0,1,2
+Jamaica,2016,Summer,2640,0,0
+Jamaica,2018,Winter,0,1,2
+Jamaica,2020,Summer,2520,0,0
+Jamaica,2022,Winter,0,1,2
+Japan,1992,Summer,12650,0,1
+Japan,1994,Winter,2750,1,2
+Japan,1996,Summer,14775,0,1
+Japan,1998,Winter,8150,1,2
+Japan,2000,Summer,29735,0,1
+Japan,2002,Winter,3320,1,2
+Japan,2004,Summer,76440,0,1
+Japan,2006,Winter,1540,1,2
+Japan,2008,Summer,52780,0,0
+Japan,2010,Winter,6250,1,2
+Japan,2012,Summer,82290,0,0
+Japan,2014,Winter,9280,1,2
+Japan,2016,Summer,95030,0,0
+Japan,2018,Winter,17810,1,2
+Japan,2020,Summer,178200,0,3
+Japan,2022,Winter,28440,1,2
+Jordan,1996,Summer,0,0,1
+Jordan,2000,Summer,0,0,1
+Jordan,2004,Summer,0,0,1
+Jordan,2008,Summer,0,0,0
+Jordan,2012,Summer,0,0,0
+Jordan,2016,Summer,80,0,0
+Jordan,2020,Summer,220,0,0
+Kazakhstan,1994,Winter,975,1,2
+Kazakhstan,1996,Summer,4785,0,1
+Kazakhstan,1998,Winter,760,1,2
+Kazakhstan,2000,Summer,5670,0,1
+Kazakhstan,2002,Winter,0,1,2
+Kazakhstan,2004,Summer,6240,0,1
+Kazakhstan,2006,Winter,0,1,2
+Kazakhstan,2008,Summer,8910,0,0
+Kazakhstan,2010,Winter,850,1,2
+Kazakhstan,2012,Summer,10340,0,0
+Kazakhstan,2014,Winter,980,1,2
+Kazakhstan,2016,Summer,16380,0,0
+Kazakhstan,2018,Winter,910,1,2
+Kazakhstan,2020,Summer,6560,0,0
+Kazakhstan,2022,Winter,0,1,2
+Kenya,1992,Summer,1000,0,1
+Kenya,1996,Summer,1440,0,1
+Kenya,1998,Winter,0,1,2
+Kenya,2000,Summer,1960,0,1
+Kenya,2002,Winter,0,1,2
+Kenya,2004,Summer,1750,0,1
+Kenya,2006,Winter,0,1,2
+Kenya,2008,Summer,6560,0,0
+Kenya,2012,Summer,4560,0,0
+Kenya,2016,Summer,5720,0,0
+Kenya,2018,Winter,0,1,2
+Kenya,2020,Summer,3400,0,0
+Kiribati,2004,Summer,0,0,1
+Kiribati,2008,Summer,0,0,0
+Kiribati,2012,Summer,0,0,0
+Kiribati,2016,Summer,0,0,0
+Kiribati,2020,Summer,0,0,0
+Korea Team,2018,Winter,0,1,2
+Kosovo,2016,Summer,60,0,0
+Kosovo,2018,Winter,0,1,2
+Kosovo,2020,Summer,160,0,0
+Kosovo,2022,Winter,0,1,2
+Kuwait,1992,Summer,0,0,1
+Kuwait,1996,Summer,0,0,1
+Kuwait,2000,Summer,85,0,1
+Kuwait,2004,Summer,0,0,1
+Kuwait,2008,Summer,0,0,0
+Kuwait,2012,Summer,100,0,0
+Kuwait,2020,Summer,60,0,0
+Kyrgyzstan,1994,Winter,0,1,2
+Kyrgyzstan,1996,Summer,0,0,1
+Kyrgyzstan,1998,Winter,0,1,2
+Kyrgyzstan,2000,Summer,355,0,1
+Kyrgyzstan,2002,Winter,0,1,2
+Kyrgyzstan,2004,Summer,0,0,1
+Kyrgyzstan,2006,Winter,0,1,2
+Kyrgyzstan,2008,Summer,540,0,0
+Kyrgyzstan,2010,Winter,0,1,2
+Kyrgyzstan,2012,Summer,0,0,0
+Kyrgyzstan,2014,Winter,0,1,2
+Kyrgyzstan,2016,Summer,0,0,0
+Kyrgyzstan,2018,Winter,0,1,2
+Kyrgyzstan,2020,Summer,420,0,0
+Kyrgyzstan,2022,Winter,0,1,2
+Lao People's Democratic Republic,1992,Summer,0,0,1
+Lao People's Democratic Republic,1996,Summer,0,0,1
+Lao People's Democratic Republic,2000,Summer,0,0,1
+Lao People's Democratic Republic,2004,Summer,0,0,1
+Lao People's Democratic Republic,2008,Summer,0,0,0
+Lao People's Democratic Republic,2012,Summer,0,0,0
+Lao People's Democratic Republic,2016,Summer,0,0,0
+Lao People's Democratic Republic,2020,Summer,0,0,0
+Latvia,1992,Summer,240,0,1
+Latvia,1994,Winter,0,1,2
+Latvia,1996,Summer,185,0,1
+Latvia,1998,Winter,0,1,2
+Latvia,2000,Summer,1050,0,1
+Latvia,2002,Winter,0,1,2
+Latvia,2004,Summer,1120,0,1
+Latvia,2006,Winter,550,1,2
+Latvia,2008,Summer,810,0,0
+Latvia,2010,Winter,1470,1,2
+Latvia,2012,Summer,990,0,0
+Latvia,2014,Winter,3220,1,2
+Latvia,2016,Summer,0,0,0
+Latvia,2018,Winter,860,1,2
+Latvia,2020,Summer,480,0,0
+Latvia,2022,Winter,520,1,2
+Lebanon,1992,Summer,0,0,1
+Lebanon,1996,Summer,0,0,1
+Lebanon,2000,Summer,0,0,1
+Lebanon,2002,Winter,0,1,2
+Lebanon,2004,Summer,0,0,1
+Lebanon,2006,Winter,0,1,2
+Lebanon,2008,Summer,0,0,0
+Lebanon,2010,Winter,0,1,2
+Lebanon,2012,Summer,0,0,0
+Lebanon,2014,Winter,0,1,2
+Lebanon,2016,Summer,0,0,0
+Lebanon,2018,Winter,0,1,2
+Lebanon,2020,Summer,0,0,0
+Lebanon,2022,Winter,0,1,2
+Lesotho,1992,Summer,0,0,1
+Lesotho,1996,Summer,0,0,1
+Lesotho,2000,Summer,0,0,1
+Lesotho,2004,Summer,0,0,1
+Lesotho,2008,Summer,0,0,0
+Lesotho,2012,Summer,0,0,0
+Lesotho,2016,Summer,0,0,0
+Lesotho,2020,Summer,0,0,0
+Liberia,2008,Summer,0,0,0
+Liberia,2012,Summer,0,0,0
+Liberia,2020,Summer,0,0,0
+Libya,1992,Summer,0,0,1
+Libya,1996,Summer,0,0,1
+Libya,2000,Summer,0,0,1
+Libya,2004,Summer,0,0,1
+Libya,2008,Summer,0,0,0
+Libya,2012,Summer,0,0,0
+Libya,2016,Summer,0,0,0
+Libya,2020,Summer,0,0,0
+Liechtenstein,1992,Summer,0,0,1
+Liechtenstein,1994,Winter,0,1,2
+Liechtenstein,1996,Summer,0,0,1
+Liechtenstein,1998,Winter,0,1,2
+Liechtenstein,2000,Summer,0,0,1
+Liechtenstein,2002,Winter,0,1,2
+Liechtenstein,2004,Summer,0,0,1
+Liechtenstein,2006,Winter,0,1,2
+Liechtenstein,2008,Summer,0,0,0
+Liechtenstein,2010,Winter,0,1,2
+Liechtenstein,2012,Summer,0,0,0
+Liechtenstein,2014,Winter,0,1,2
+Liechtenstein,2016,Summer,0,0,0
+Liechtenstein,2018,Winter,90,1,2
+Liechtenstein,2020,Summer,0,0,0
+Liechtenstein,2022,Winter,0,1,2
+Lithuania,1992,Summer,180,0,1
+Lithuania,1994,Winter,0,1,2
+Lithuania,1996,Summer,275,0,1
+Lithuania,1998,Winter,0,1,2
+Lithuania,2000,Summer,1950,0,1
+Lithuania,2002,Winter,0,1,2
+Lithuania,2004,Summer,1290,0,1
+Lithuania,2006,Winter,0,1,2
+Lithuania,2008,Summer,2550,0,0
+Lithuania,2010,Winter,0,1,2
+Lithuania,2012,Summer,2450,0,0
+Lithuania,2014,Winter,0,1,2
+Lithuania,2016,Summer,3570,0,0
+Lithuania,2018,Winter,0,1,2
+Lithuania,2020,Summer,290,0,0
+Lithuania,2022,Winter,0,1,2
+Luxembourg,1992,Summer,0,0,1
+Luxembourg,1994,Winter,0,1,2
+Luxembourg,1996,Summer,0,0,1
+Luxembourg,2000,Summer,0,0,1
+Luxembourg,2004,Summer,0,0,1
+Luxembourg,2006,Winter,0,1,2
+Luxembourg,2008,Summer,0,0,0
+Luxembourg,2012,Summer,0,0,0
+Luxembourg,2014,Winter,0,1,2
+Luxembourg,2016,Summer,0,0,0
+Luxembourg,2018,Winter,0,1,2
+Luxembourg,2020,Summer,0,0,0
+Luxembourg,2022,Winter,0,1,2
+Madagascar,1992,Summer,0,0,1
+Madagascar,1996,Summer,0,0,1
+Madagascar,2000,Summer,0,0,1
+Madagascar,2004,Summer,0,0,1
+Madagascar,2006,Winter,0,1,2
+Madagascar,2008,Summer,0,0,0
+Madagascar,2012,Summer,0,0,0
+Madagascar,2016,Summer,0,0,0
+Madagascar,2018,Winter,0,1,2
+Madagascar,2020,Summer,0,0,0
+Madagascar,2022,Winter,0,1,2
+Malawi,1992,Summer,0,0,1
+Malawi,1996,Summer,0,0,1
+Malawi,2004,Summer,0,0,1
+Malawi,2008,Summer,0,0,0
+Malawi,2012,Summer,0,0,0
+Malawi,2016,Summer,0,0,0
+Malawi,2020,Summer,0,0,0
+Malaysia,1992,Summer,50,0,1
+Malaysia,1996,Summer,330,0,1
+Malaysia,2000,Summer,0,0,1
+Malaysia,2004,Summer,0,0,1
+Malaysia,2008,Summer,330,0,0
+Malaysia,2012,Summer,580,0,0
+Malaysia,2016,Summer,2480,0,0
+Malaysia,2018,Winter,0,1,2
+Malaysia,2020,Summer,690,0,0
+Malaysia,2022,Winter,0,1,2
+Maldives,1992,Summer,0,0,1
+Maldives,1996,Summer,0,0,1
+Maldives,2000,Summer,0,0,1
+Maldives,2004,Summer,0,0,1
+Maldives,2008,Summer,0,0,0
+Maldives,2012,Summer,0,0,0
+Maldives,2016,Summer,0,0,0
+Maldives,2020,Summer,0,0,0
+Mali,1992,Summer,0,0,1
+Mali,2000,Summer,0,0,1
+Mali,2004,Summer,0,0,1
+Mali,2008,Summer,0,0,0
+Mali,2012,Summer,0,0,0
+Mali,2016,Summer,0,0,0
+Mali,2020,Summer,0,0,0
+Malta,1992,Summer,0,0,1
+Malta,1996,Summer,0,0,1
+Malta,2000,Summer,0,0,1
+Malta,2004,Summer,0,0,1
+Malta,2008,Summer,0,0,0
+Malta,2012,Summer,0,0,0
+Malta,2014,Winter,0,1,2
+Malta,2016,Summer,0,0,0
+Malta,2018,Winter,0,1,2
+Malta,2020,Summer,0,0,0
+Malta,2022,Winter,0,1,2
+Marshall Islands,2008,Summer,0,0,0
+Marshall Islands,2012,Summer,0,0,0
+Marshall Islands,2016,Summer,0,0,0
+Mauritania,1992,Summer,0,0,1
+Mauritius,1992,Summer,0,0,1
+Mauritius,1996,Summer,0,0,1
+Mauritius,2000,Summer,0,0,1
+Mauritius,2004,Summer,0,0,1
+Mauritius,2008,Summer,90,0,0
+Mauritius,2012,Summer,0,0,0
+Mauritius,2016,Summer,0,0,0
+Mauritius,2020,Summer,0,0,0
+Mexico,1992,Summer,175,0,1
+Mexico,1994,Winter,0,1,2
+Mexico,1996,Summer,380,0,1
+Mexico,2000,Summer,3630,0,1
+Mexico,2002,Winter,0,1,2
+Mexico,2004,Summer,2840,0,1
+Mexico,2008,Summer,3850,0,0
+Mexico,2010,Winter,0,1,2
+Mexico,2012,Summer,8600,0,0
+Mexico,2014,Winter,0,1,2
+Mexico,2016,Summer,4500,0,0
+Mexico,2018,Winter,0,1,2
+Mexico,2020,Summer,5820,0,0
+Mexico,2022,Winter,0,1,2
+Monaco,1994,Winter,0,1,2
+Monaco,1996,Summer,0,0,1
+Monaco,1998,Winter,0,1,2
+Monaco,2000,Summer,0,0,1
+Monaco,2002,Winter,0,1,2
+Monaco,2004,Summer,0,0,1
+Monaco,2006,Winter,0,1,2
+Monaco,2008,Summer,0,0,0
+Monaco,2010,Winter,0,1,2
+Monaco,2012,Summer,0,0,0
+Monaco,2014,Winter,0,1,2
+Monaco,2016,Summer,0,0,0
+Monaco,2018,Winter,0,1,2
+Monaco,2020,Summer,0,0,0
+Monaco,2022,Winter,0,1,2
+Mongolia,1992,Summer,250,0,1
+Mongolia,1994,Winter,0,1,2
+Mongolia,1996,Summer,85,0,1
+Mongolia,1998,Winter,0,1,2
+Mongolia,2000,Summer,0,0,1
+Mongolia,2002,Winter,0,1,2
+Mongolia,2004,Summer,140,0,1
+Mongolia,2006,Winter,0,1,2
+Mongolia,2008,Summer,1200,0,0
+Mongolia,2010,Winter,0,1,2
+Mongolia,2012,Summer,1600,0,0
+Mongolia,2014,Winter,0,1,2
+Mongolia,2016,Summer,920,0,0
+Mongolia,2018,Winter,0,1,2
+Mongolia,2020,Summer,1800,0,0
+Mongolia,2022,Winter,0,1,2
+Montenegro,2008,Summer,0,0,0
+Montenegro,2010,Winter,0,1,2
+Montenegro,2012,Summer,80,0,0
+Montenegro,2014,Winter,0,1,2
+Montenegro,2016,Summer,0,0,0
+Montenegro,2018,Winter,0,1,2
+Montenegro,2020,Summer,0,0,0
+Montenegro,2022,Winter,0,1,2
+Morocco,1992,Summer,195,0,1
+Morocco,1996,Summer,290,0,1
+Morocco,2000,Summer,975,0,1
+Morocco,2004,Summer,960,0,1
+Morocco,2008,Summer,660,0,0
+Morocco,2010,Winter,0,1,2
+Morocco,2012,Summer,400,0,0
+Morocco,2014,Winter,0,1,2
+Morocco,2016,Summer,370,0,0
+Morocco,2018,Winter,0,1,2
+Morocco,2020,Summer,340,0,0
+Morocco,2022,Winter,0,1,2
+Mozambique,1992,Summer,0,0,1
+Mozambique,1996,Summer,20,0,1
+Mozambique,2000,Summer,30,0,1
+Mozambique,2004,Summer,0,0,1
+Mozambique,2008,Summer,0,0,0
+Mozambique,2012,Summer,0,0,0
+Mozambique,2016,Summer,0,0,0
+Mozambique,2020,Summer,0,0,0
+Myanmar,1992,Summer,0,0,1
+Myanmar,1996,Summer,0,0,1
+Myanmar,2000,Summer,0,0,1
+Myanmar,2004,Summer,0,0,1
+Myanmar,2008,Summer,0,0,0
+Myanmar,2012,Summer,0,0,0
+Myanmar,2016,Summer,0,0,0
+Myanmar,2020,Summer,0,0,0
+Namibia,1992,Summer,40,0,1
+Namibia,1996,Summer,110,0,1
+Namibia,2000,Summer,0,0,1
+Namibia,2004,Summer,0,0,1
+Namibia,2008,Summer,0,0,0
+Namibia,2012,Summer,0,0,0
+Namibia,2016,Summer,0,0,0
+Namibia,2020,Summer,110,0,0
+Nauru,1996,Summer,0,0,1
+Nauru,2000,Summer,0,0,1
+Nauru,2004,Summer,0,0,1
+Nauru,2008,Summer,0,0,0
+Nauru,2012,Summer,0,0,0
+Nauru,2016,Summer,0,0,0
+Nauru,2020,Summer,0,0,0
+Nepal,1992,Summer,0,0,1
+Nepal,1996,Summer,0,0,1
+Nepal,2000,Summer,0,0,1
+Nepal,2002,Winter,0,1,2
+Nepal,2004,Summer,0,0,1
+Nepal,2006,Winter,0,1,2
+Nepal,2008,Summer,0,0,0
+Nepal,2010,Winter,0,1,2
+Nepal,2012,Summer,0,0,0
+Nepal,2014,Winter,0,1,2
+Nepal,2016,Summer,0,0,0
+Nepal,2020,Summer,0,0,0
+Netherlands,1992,Summer,5120,0,1
+Netherlands,1994,Winter,780,1,2
+Netherlands,1996,Summer,12600,0,1
+Netherlands,1998,Winter,2530,1,2
+Netherlands,2000,Summer,28620,0,1
+Netherlands,2002,Winter,3440,1,2
+Netherlands,2004,Summer,26450,0,1
+Netherlands,2006,Winter,4410,1,2
+Netherlands,2008,Summer,20340,0,0
+Netherlands,2010,Winter,4240,1,2
+Netherlands,2012,Summer,24780,0,0
+Netherlands,2014,Winter,15840,1,2
+Netherlands,2016,Summer,30030,0,0
+Netherlands,2018,Winter,11400,1,2
+Netherlands,2020,Summer,59450,0,0
+Netherlands,2022,Winter,11560,1,2
+Netherlands Antilles,1992,Summer,0,0,1
+Netherlands Antilles,1996,Summer,0,0,1
+Netherlands Antilles,2000,Summer,0,0,1
+Netherlands Antilles,2004,Summer,0,0,1
+Netherlands Antilles,2008,Summer,0,0,0
+New Zealand,1992,Summer,2820,0,1
+New Zealand,1994,Winter,0,1,2
+New Zealand,1996,Summer,2430,0,1
+New Zealand,1998,Winter,0,1,2
+New Zealand,2000,Summer,3020,0,1
+New Zealand,2002,Winter,0,1,2
+New Zealand,2004,Summer,5460,0,1
+New Zealand,2006,Winter,0,1,2
+New Zealand,2008,Summer,9680,0,0
+New Zealand,2010,Winter,0,1,2
+New Zealand,2012,Summer,18620,0,0
+New Zealand,2014,Winter,0,1,2
+New Zealand,2016,Summer,22540,0,0
+New Zealand,2018,Winter,580,1,2
+New Zealand,2020,Summer,23250,0,0
+New Zealand,2022,Winter,750,1,2
+Nicaragua,1992,Summer,0,0,1
+Nicaragua,1996,Summer,0,0,1
+Nicaragua,2000,Summer,0,0,1
+Nicaragua,2004,Summer,0,0,1
+Nicaragua,2008,Summer,0,0,0
+Nicaragua,2012,Summer,0,0,0
+Nicaragua,2016,Summer,0,0,0
+Nicaragua,2020,Summer,0,0,0
+Niger,1992,Summer,0,0,1
+Niger,1996,Summer,0,0,1
+Niger,2000,Summer,0,0,1
+Niger,2004,Summer,0,0,1
+Niger,2008,Summer,0,0,0
+Niger,2012,Summer,0,0,0
+Niger,2016,Summer,40,0,0
+Niger,2020,Summer,0,0,0
+Nigeria,1992,Summer,320,0,1
+Nigeria,1996,Summer,930,0,1
+Nigeria,2000,Summer,720,0,1
+Nigeria,2004,Summer,560,0,1
+Nigeria,2008,Summer,1300,0,0
+Nigeria,2012,Summer,0,0,0
+Nigeria,2016,Summer,230,0,0
+Nigeria,2018,Winter,0,1,2
+Nigeria,2020,Summer,400,0,0
+Nigeria,2022,Winter,0,1,2
+North Macedonia,2020,Summer,50,0,0
+North Macedonia,2022,Winter,0,1,2
+Norway,1992,Summer,945,0,1
+Norway,1994,Winter,16120,1,2
+Norway,1996,Summer,2360,0,1
+Norway,1998,Winter,15875,1,2
+Norway,2000,Summer,5610,0,1
+Norway,2002,Winter,34500,1,2
+Norway,2004,Summer,3080,0,1
+Norway,2006,Winter,26800,1,2
+Norway,2008,Summer,5310,0,0
+Norway,2010,Winter,34560,1,2
+Norway,2012,Summer,1880,0,0
+Norway,2014,Winter,44280,1,2
+Norway,2016,Summer,2640,0,0
+Norway,2018,Winter,65940,1,2
+Norway,2020,Summer,4860,0,0
+Norway,2022,Winter,62010,1,2
+Olympic Athletes from Russia,2018,Winter,28440,1,2
+Oman,1996,Summer,0,0,1
+Oman,2000,Summer,0,0,1
+Oman,2004,Summer,0,0,1
+Oman,2008,Summer,0,0,0
+Oman,2012,Summer,0,0,0
+Oman,2016,Summer,0,0,0
+Oman,2020,Summer,0,0,0
+Pakistan,1992,Summer,10,0,1
+Pakistan,1996,Summer,0,0,1
+Pakistan,2000,Summer,0,0,1
+Pakistan,2004,Summer,0,0,1
+Pakistan,2008,Summer,0,0,0
+Pakistan,2010,Winter,0,1,2
+Pakistan,2012,Summer,0,0,0
+Pakistan,2014,Winter,0,1,2
+Pakistan,2016,Summer,0,0,0
+Pakistan,2018,Winter,0,1,2
+Pakistan,2020,Summer,0,0,0
+Pakistan,2022,Winter,0,1,2
+Palau,2000,Summer,0,0,1
+Palau,2004,Summer,0,0,1
+Palau,2008,Summer,0,0,0
+Palau,2012,Summer,0,0,0
+Palau,2016,Summer,0,0,0
+Palestine,2000,Summer,0,0,1
+Palestine,2004,Summer,0,0,1
+Palestine,2008,Summer,0,0,0
+Palestine,2012,Summer,0,0,0
+Palestine,2016,Summer,0,0,0
+Palestine,2020,Summer,0,0,0
+Panama,1992,Summer,0,0,1
+Panama,1996,Summer,0,0,1
+Panama,2000,Summer,0,0,1
+Panama,2004,Summer,0,0,1
+Panama,2008,Summer,40,0,0
+Panama,2012,Summer,0,0,0
+Panama,2016,Summer,0,0,0
+Panama,2020,Summer,0,0,0
+Papua New Guinea,1992,Summer,0,0,1
+Papua New Guinea,1996,Summer,0,0,1
+Papua New Guinea,2000,Summer,0,0,1
+Papua New Guinea,2004,Summer,0,0,1
+Papua New Guinea,2008,Summer,0,0,0
+Papua New Guinea,2012,Summer,0,0,0
+Papua New Guinea,2016,Summer,0,0,0
+Papua New Guinea,2020,Summer,0,0,0
+Paraguay,1992,Summer,0,0,1
+Paraguay,1996,Summer,0,0,1
+Paraguay,2000,Summer,0,0,1
+Paraguay,2004,Summer,40,0,1
+Paraguay,2008,Summer,0,0,0
+Paraguay,2012,Summer,0,0,0
+Paraguay,2014,Winter,0,1,2
+Paraguay,2016,Summer,0,0,0
+Paraguay,2020,Summer,0,0,0
+People's Republic of China,1992,Summer,34160,0,1
+People's Republic of China,1994,Winter,495,1,2
+People's Republic of China,1996,Summer,62640,0,1
+People's Republic of China,1998,Winter,2360,1,2
+People's Republic of China,2000,Summer,132300,0,3
+People's Republic of China,2002,Winter,6930,1,2
+People's Republic of China,2004,Summer,189440,0,3
+People's Republic of China,2006,Winter,15470,1,2
+People's Republic of China,2008,Summer,375160,0,3
+People's Republic of China,2010,Winter,11310,1,2
+People's Republic of China,2012,Summer,279480,0,3
+People's Republic of China,2014,Winter,7650,1,2
+People's Republic of China,2016,Summer,222780,0,3
+People's Republic of China,2018,Winter,9900,1,2
+People's Republic of China,2020,Summer,282880,0,3
+People's Republic of China,2022,Winter,32160,1,2
+Peru,1992,Summer,15,0,1
+Peru,1996,Summer,0,0,1
+Peru,2000,Summer,0,0,1
+Peru,2004,Summer,0,0,1
+Peru,2008,Summer,0,0,0
+Peru,2010,Winter,0,1,2
+Peru,2012,Summer,0,0,0
+Peru,2014,Winter,0,1,2
+Peru,2016,Summer,0,0,0
+Peru,2020,Summer,0,0,0
+Peru,2022,Winter,0,1,2
+Philippines,1992,Summer,35,0,1
+Philippines,1996,Summer,85,0,1
+Philippines,2000,Summer,0,0,1
+Philippines,2004,Summer,0,0,1
+Philippines,2008,Summer,0,0,0
+Philippines,2012,Summer,0,0,0
+Philippines,2014,Winter,0,1,2
+Philippines,2016,Summer,110,0,0
+Philippines,2018,Winter,0,1,2
+Philippines,2020,Summer,640,0,0
+Philippines,2022,Winter,0,1,2
+Poland,1992,Summer,10185,0,1
+Poland,1994,Winter,0,1,2
+Poland,1996,Summer,12580,0,1
+Poland,1998,Winter,0,1,2
+Poland,2000,Summer,20880,0,1
+Poland,2002,Winter,860,1,2
+Poland,2004,Summer,15600,0,1
+Poland,2006,Winter,1480,1,2
+Poland,2008,Summer,20640,0,0
+Poland,2010,Winter,5160,1,2
+Poland,2012,Summer,19760,0,0
+Poland,2014,Winter,6960,1,2
+Poland,2016,Summer,21060,0,0
+Poland,2018,Winter,2160,1,2
+Poland,2020,Summer,22720,0,0
+Poland,2022,Winter,1030,1,2
+Portugal,1992,Summer,0,0,1
+Portugal,1994,Winter,0,1,2
+Portugal,1996,Summer,975,0,1
+Portugal,1998,Winter,0,1,2
+Portugal,2000,Summer,830,0,1
+Portugal,2004,Summer,1470,0,1
+Portugal,2006,Winter,0,1,2
+Portugal,2008,Summer,1240,0,0
+Portugal,2010,Winter,0,1,2
+Portugal,2012,Summer,1340,0,0
+Portugal,2014,Winter,0,1,2
+Portugal,2016,Summer,680,0,0
+Portugal,2018,Winter,0,1,2
+Portugal,2020,Summer,2360,0,0
+Portugal,2022,Winter,0,1,2
+Puerto Rico,1992,Summer,75,0,1
+Puerto Rico,1994,Winter,0,1,2
+Puerto Rico,1996,Summer,215,0,1
+Puerto Rico,1998,Winter,0,1,2
+Puerto Rico,2000,Summer,0,0,1
+Puerto Rico,2002,Winter,0,1,2
+Puerto Rico,2004,Summer,0,0,1
+Puerto Rico,2008,Summer,0,0,0
+Puerto Rico,2012,Summer,320,0,0
+Puerto Rico,2016,Summer,220,0,0
+Puerto Rico,2018,Winter,0,1,2
+Puerto Rico,2020,Summer,200,0,0
+Puerto Rico,2022,Winter,0,1,2
+Qatar,1992,Summer,10,0,1
+Qatar,1996,Summer,0,0,1
+Qatar,2000,Summer,70,0,1
+Qatar,2004,Summer,0,0,1
+Qatar,2008,Summer,0,0,0
+Qatar,2012,Summer,220,0,0
+Qatar,2016,Summer,190,0,0
+Qatar,2020,Summer,280,0,0
+ROC,2020,Summer,221130,0,3
+ROC,2022,Winter,88920,1,2
+Refugee Olympic Athletes,2016,Summer,0,0,0
+Refugee Olympic Team,2020,Summer,0,0,0
+Republic of Korea,1992,Summer,12950,0,1
+Republic of Korea,1994,Winter,1260,1,2
+Republic of Korea,1996,Summer,28960,0,1
+Republic of Korea,1998,Winter,2010,1,2
+Republic of Korea,2000,Summer,39835,0,1
+Republic of Korea,2002,Winter,2800,1,2
+Republic of Korea,2004,Summer,57120,0,1
+Republic of Korea,2006,Winter,7480,1,2
+Republic of Korea,2008,Summer,56000,0,0
+Republic of Korea,2010,Winter,9520,1,2
+Republic of Korea,2012,Summer,50840,0,0
+Republic of Korea,2014,Winter,7840,1,2
+Republic of Korea,2016,Summer,32340,0,0
+Republic of Korea,2018,Winter,21760,1,2
+Republic of Korea,2020,Summer,31240,0,0
+Republic of Korea,2022,Winter,8010,1,2
+Republic of Moldova,1994,Winter,0,1,2
+Republic of Moldova,1996,Summer,660,0,1
+Republic of Moldova,1998,Winter,0,1,2
+Republic of Moldova,2000,Summer,370,0,1
+Republic of Moldova,2002,Winter,0,1,2
+Republic of Moldova,2004,Summer,0,0,1
+Republic of Moldova,2006,Winter,0,1,2
+Republic of Moldova,2008,Summer,210,0,0
+Republic of Moldova,2010,Winter,0,1,2
+Republic of Moldova,2012,Summer,0,0,0
+Republic of Moldova,2014,Winter,0,1,2
+Republic of Moldova,2016,Summer,0,0,0
+Republic of Moldova,2018,Winter,0,1,2
+Republic of Moldova,2020,Summer,170,0,0
+Republic of Moldova,2022,Winter,0,1,2
+Romania,1992,Summer,7410,0,1
+Romania,1994,Winter,0,1,2
+Romania,1996,Summer,14720,0,1
+Romania,1998,Winter,0,1,2
+Romania,2000,Summer,27600,0,1
+Romania,2002,Winter,0,1,2
+Romania,2004,Summer,20370,0,1
+Romania,2006,Winter,0,1,2
+Romania,2008,Summer,7800,0,0
+Romania,2010,Winter,0,1,2
+Romania,2012,Summer,4900,0,0
+Romania,2014,Winter,0,1,2
+Romania,2016,Summer,2950,0,0
+Romania,2018,Winter,0,1,2
+Romania,2020,Summer,2640,0,0
+Romania,2022,Winter,0,1,2
+Russian Federation,1994,Winter,21060,1,2
+Russian Federation,1996,Summer,90720,0,1
+Russian Federation,1998,Winter,16060,1,2
+Russian Federation,2000,Summer,250170,0,3
+Russian Federation,2002,Winter,25050,1,2
+Russian Federation,2004,Summer,300200,0,3
+Russian Federation,2006,Winter,48750,1,2
+Russian Federation,2008,Summer,225120,0,3
+Russian Federation,2010,Winter,36670,1,2
+Russian Federation,2012,Summer,239440,0,3
+Russian Federation,2014,Winter,78870,1,2
+Russian Federation,2016,Summer,143960,0,3
+Rwanda,1992,Summer,0,0,1
+Rwanda,1996,Summer,0,0,1
+Rwanda,2000,Summer,0,0,1
+Rwanda,2004,Summer,0,0,1
+Rwanda,2008,Summer,0,0,0
+Rwanda,2012,Summer,0,0,0
+Rwanda,2016,Summer,0,0,0
+Rwanda,2020,Summer,0,0,0
+Saint Kitts and Nevis,2000,Summer,0,0,1
+Saint Kitts and Nevis,2004,Summer,0,0,1
+Saint Kitts and Nevis,2008,Summer,0,0,0
+Saint Kitts and Nevis,2012,Summer,0,0,0
+Saint Lucia,1996,Summer,0,0,1
+Saint Lucia,2000,Summer,0,0,1
+Saint Lucia,2004,Summer,0,0,1
+Saint Lucia,2008,Summer,0,0,0
+Saint Lucia,2012,Summer,0,0,0
+Saint Lucia,2016,Summer,0,0,0
+Saint Lucia,2020,Summer,0,0,0
+Saint Vincent and the Grenadines,1996,Summer,0,0,1
+Saint Vincent and the Grenadines,2000,Summer,0,0,1
+Saint Vincent and the Grenadines,2004,Summer,0,0,1
+Saint Vincent and the Grenadines,2012,Summer,0,0,0
+Saint Vincent and the Grenadines,2016,Summer,0,0,0
+Samoa,1992,Summer,0,0,1
+Samoa,1996,Summer,0,0,1
+Samoa,2000,Summer,0,0,1
+Samoa,2004,Summer,0,0,1
+Samoa,2008,Summer,30,0,0
+Samoa,2012,Summer,0,0,0
+Samoa,2016,Summer,0,0,0
+Samoa,2020,Summer,0,0,0
+San Marino,1992,Summer,0,0,1
+San Marino,1994,Winter,0,1,2
+San Marino,1996,Summer,0,0,1
+San Marino,2000,Summer,0,0,1
+San Marino,2002,Winter,0,1,2
+San Marino,2004,Summer,0,0,1
+San Marino,2006,Winter,0,1,2
+San Marino,2008,Summer,0,0,0
+San Marino,2010,Winter,0,1,2
+San Marino,2012,Summer,0,0,0
+San Marino,2014,Winter,0,1,2
+San Marino,2016,Summer,0,0,0
+San Marino,2018,Winter,0,1,2
+San Marino,2020,Summer,200,0,0
+San Marino,2022,Winter,0,1,2
+Sao Tome and Principe,2004,Summer,0,0,1
+Sao Tome and Principe,2016,Summer,0,0,0
+Sao Tome and Principe,2020,Summer,0,0,0
+Saudi Arabia,1992,Summer,0,0,1
+Saudi Arabia,1996,Summer,0,0,1
+Saudi Arabia,2000,Summer,140,0,1
+Saudi Arabia,2004,Summer,0,0,1
+Saudi Arabia,2008,Summer,0,0,0
+Saudi Arabia,2012,Summer,120,0,0
+Saudi Arabia,2016,Summer,0,0,0
+Saudi Arabia,2020,Summer,90,0,0
+Saudi Arabia,2022,Winter,0,1,2
+Senegal,1992,Summer,0,0,1
+Senegal,1994,Winter,0,1,2
+Senegal,1996,Summer,0,0,1
+Senegal,2000,Summer,0,0,1
+Senegal,2004,Summer,0,0,1
+Senegal,2006,Winter,0,1,2
+Senegal,2008,Summer,0,0,0
+Senegal,2010,Winter,0,1,2
+Senegal,2012,Summer,0,0,0
+Senegal,2016,Summer,0,0,0
+Senegal,2020,Summer,0,0,0
+Serbia,2008,Summer,1260,0,0
+Serbia,2010,Winter,0,1,2
+Serbia,2012,Summer,2680,0,0
+Serbia,2014,Winter,0,1,2
+Serbia,2016,Summer,5670,0,0
+Serbia,2018,Winter,0,1,2
+Serbia,2020,Summer,4590,0,0
+Serbia,2022,Winter,0,1,2
+Serbia and Montenegro,1996,Summer,780,0,1
+Serbia and Montenegro,1998,Winter,0,1,2
+Serbia and Montenegro,2000,Summer,930,0,1
+Serbia and Montenegro,2002,Winter,0,1,2
+Serbia and Montenegro,2004,Summer,680,0,1
+Serbia and Montenegro,2006,Winter,0,1,2
+Seychelles,1992,Summer,0,0,1
+Seychelles,1996,Summer,0,0,1
+Seychelles,2000,Summer,0,0,1
+Seychelles,2004,Summer,0,0,1
+Seychelles,2008,Summer,0,0,0
+Seychelles,2012,Summer,0,0,0
+Seychelles,2016,Summer,0,0,0
+Seychelles,2020,Summer,0,0,0
+Sierra Leone,1992,Summer,0,0,1
+Sierra Leone,1996,Summer,0,0,1
+Sierra Leone,2000,Summer,0,0,1
+Sierra Leone,2008,Summer,0,0,0
+Sierra Leone,2016,Summer,0,0,0
+Sierra Leone,2020,Summer,0,0,0
+Singapore,1992,Summer,0,0,1
+Singapore,1996,Summer,0,0,1
+Singapore,2000,Summer,0,0,1
+Singapore,2004,Summer,0,0,1
+Singapore,2008,Summer,260,0,0
+Singapore,2012,Summer,500,0,0
+Singapore,2016,Summer,260,0,0
+Singapore,2018,Winter,0,1,2
+Singapore,2020,Summer,0,0,0
+Slovakia,1994,Winter,0,1,2
+Slovakia,1996,Summer,1035,0,1
+Slovakia,1998,Winter,0,1,2
+Slovakia,2000,Summer,2790,0,1
+Slovakia,2002,Winter,0,1,2
+Slovakia,2004,Summer,3640,0,1
+Slovakia,2006,Winter,780,1,2
+Slovakia,2008,Summer,3220,0,0
+Slovakia,2010,Winter,1560,1,2
+Slovakia,2012,Summer,2400,0,0
+Slovakia,2014,Winter,720,1,2
+Slovakia,2016,Summer,2200,0,0
+Slovakia,2018,Winter,2190,1,2
+Slovakia,2020,Summer,1320,0,0
+Slovakia,2022,Winter,1020,1,2
+Slovenia,1992,Summer,255,0,1
+Slovenia,1994,Winter,795,1,2
+Slovenia,1996,Summer,330,0,1
+Slovenia,1998,Winter,0,1,2
+Slovenia,2000,Summer,1035,0,1
+Slovenia,2002,Winter,840,1,2
+Slovenia,2004,Summer,2750,0,1
+Slovenia,2006,Winter,0,1,2
+Slovenia,2008,Summer,2500,0,0
+Slovenia,2010,Winter,2760,1,2
+Slovenia,2012,Summer,3050,0,0
+Slovenia,2014,Winter,6800,1,2
+Slovenia,2016,Summer,1720,0,0
+Slovenia,2018,Winter,1860,1,2
+Slovenia,2020,Summer,1800,0,0
+Slovenia,2022,Winter,5950,1,2
+Solomon Islands,1992,Summer,0,0,1
+Solomon Islands,1996,Summer,0,0,1
+Solomon Islands,2008,Summer,0,0,0
+Solomon Islands,2012,Summer,0,0,0
+Solomon Islands,2016,Summer,0,0,0
+Solomon Islands,2020,Summer,0,0,0
+Somalia,1996,Summer,0,0,1
+Somalia,2020,Summer,0,0,0
+South Africa,1992,Summer,465,0,1
+South Africa,1994,Winter,0,1,2
+South Africa,1996,Summer,1575,0,1
+South Africa,1998,Winter,0,1,2
+South Africa,2000,Summer,2900,0,1
+South Africa,2002,Winter,0,1,2
+South Africa,2004,Summer,3640,0,1
+South Africa,2006,Winter,0,1,2
+South Africa,2008,Summer,880,0,0
+South Africa,2010,Winter,0,1,2
+South Africa,2012,Summer,4440,0,0
+South Africa,2016,Summer,7810,0,0
+South Africa,2018,Winter,0,1,2
+South Africa,2020,Summer,1740,0,0
+South Sudan,2016,Summer,0,0,0
+Spain,1992,Summer,14560,0,1
+Spain,1994,Winter,0,1,2
+Spain,1996,Summer,17300,0,1
+Spain,1998,Winter,0,1,2
+Spain,2000,Summer,17940,0,1
+Spain,2002,Winter,0,1,2
+Spain,2004,Summer,40800,0,1
+Spain,2006,Winter,0,1,2
+Spain,2008,Summer,41750,0,0
+Spain,2010,Winter,0,1,2
+Spain,2012,Summer,32760,0,0
+Spain,2014,Winter,0,1,2
+Spain,2016,Summer,31540,0,0
+Spain,2018,Winter,300,1,2
+Spain,2020,Summer,30210,0,0
+Spain,2022,Winter,170,1,2
+Sri Lanka,1992,Summer,0,0,1
+Sri Lanka,1996,Summer,0,0,1
+Sri Lanka,2000,Summer,80,0,1
+Sri Lanka,2004,Summer,0,0,1
+Sri Lanka,2008,Summer,0,0,0
+Sri Lanka,2012,Summer,0,0,0
+Sri Lanka,2016,Summer,0,0,0
+Sri Lanka,2020,Summer,0,0,0
+Sudan,1992,Summer,0,0,1
+Sudan,1996,Summer,0,0,1
+Sudan,2000,Summer,0,0,1
+Sudan,2004,Summer,0,0,1
+Sudan,2008,Summer,20,0,0
+Sudan,2012,Summer,0,0,0
+Sudan,2016,Summer,0,0,0
+Sudan,2020,Summer,0,0,0
+Suriname,1992,Summer,5,0,1
+Suriname,1996,Summer,0,0,1
+Suriname,2000,Summer,0,0,1
+Suriname,2004,Summer,0,0,1
+Suriname,2008,Summer,0,0,0
+Suriname,2012,Summer,0,0,0
+Suriname,2016,Summer,0,0,0
+Suriname,2020,Summer,0,0,0
+Swaziland,1992,Summer,0,0,1
+Swaziland,1996,Summer,0,0,1
+Swaziland,2000,Summer,0,0,1
+Swaziland,2004,Summer,0,0,1
+Swaziland,2008,Summer,0,0,0
+Swaziland,2012,Summer,0,0,0
+Sweden,1992,Summer,4900,0,1
+Sweden,1994,Winter,1725,1,2
+Sweden,1996,Summer,6450,0,1
+Sweden,1998,Winter,1335,1,2
+Sweden,2000,Summer,12805,0,1
+Sweden,2002,Winter,7210,1,2
+Sweden,2004,Summer,8370,0,1
+Sweden,2006,Winter,17600,1,2
+Sweden,2008,Summer,6720,0,0
+Sweden,2010,Winter,13320,1,2
+Sweden,2012,Summer,8280,0,0
+Sweden,2014,Winter,15130,1,2
+Sweden,2016,Summer,10010,0,0
+Sweden,2018,Winter,16050,1,2
+Sweden,2020,Summer,7500,0,0
+Sweden,2022,Winter,22400,1,2
+Switzerland,1992,Summer,220,0,1
+Switzerland,1994,Winter,5005,1,2
+Switzerland,1996,Summer,3320,0,1
+Switzerland,1998,Winter,3500,1,2
+Switzerland,2000,Summer,7470,0,1
+Switzerland,2002,Winter,14690,1,2
+Switzerland,2004,Summer,6160,0,1
+Switzerland,2006,Winter,16200,1,2
+Switzerland,2008,Summer,6240,0,0
+Switzerland,2010,Winter,11340,1,2
+Switzerland,2012,Summer,3080,0,0
+Switzerland,2014,Winter,18120,1,2
+Switzerland,2016,Summer,6640,0,0
+Switzerland,2018,Winter,26880,1,2
+Switzerland,2020,Summer,13050,0,0
+Switzerland,2022,Winter,23660,1,2
+Syrian Arab Republic,1992,Summer,0,0,1
+Syrian Arab Republic,1996,Summer,40,0,1
+Syrian Arab Republic,2000,Summer,0,0,1
+Syrian Arab Republic,2004,Summer,30,0,1
+Syrian Arab Republic,2008,Summer,0,0,0
+Syrian Arab Republic,2012,Summer,0,0,0
+Syrian Arab Republic,2016,Summer,0,0,0
+Syrian Arab Republic,2020,Summer,40,0,0
+Tajikistan,1996,Summer,0,0,1
+Tajikistan,2000,Summer,0,0,1
+Tajikistan,2002,Winter,0,1,2
+Tajikistan,2004,Summer,0,0,1
+Tajikistan,2006,Winter,0,1,2
+Tajikistan,2008,Summer,300,0,0
+Tajikistan,2010,Winter,0,1,2
+Tajikistan,2012,Summer,150,0,0
+Tajikistan,2014,Winter,0,1,2
+Tajikistan,2016,Summer,60,0,0
+Tajikistan,2020,Summer,0,0,0
+Thailand,1992,Summer,55,0,1
+Thailand,1996,Summer,440,0,1
+Thailand,2000,Summer,1080,0,1
+Thailand,2002,Winter,0,1,2
+Thailand,2004,Summer,3600,0,1
+Thailand,2006,Winter,0,1,2
+Thailand,2008,Summer,2520,0,0
+Thailand,2012,Summer,1560,0,0
+Thailand,2014,Winter,0,1,2
+Thailand,2016,Summer,3240,0,0
+Thailand,2018,Winter,0,1,2
+Thailand,2020,Summer,760,0,0
+Thailand,2022,Winter,0,1,2
+The Former Yugoslav Republic of Macedonia,1996,Summer,0,0,1
+The Former Yugoslav Republic of Macedonia,1998,Winter,0,1,2
+The Former Yugoslav Republic of Macedonia,2000,Summer,10,0,1
+The Former Yugoslav Republic of Macedonia,2002,Winter,0,1,2
+The Former Yugoslav Republic of Macedonia,2004,Summer,0,0,1
+The Former Yugoslav Republic of Macedonia,2006,Winter,0,1,2
+The Former Yugoslav Republic of Macedonia,2008,Summer,0,0,0
+The Former Yugoslav Republic of Macedonia,2010,Winter,0,1,2
+The Former Yugoslav Republic of Macedonia,2012,Summer,0,0,0
+The Former Yugoslav Republic of Macedonia,2014,Winter,0,1,2
+The Former Yugoslav Republic of Macedonia,2016,Summer,0,0,0
+The Former Yugoslav Republic of Macedonia,2018,Winter,0,1,2
+Togo,1992,Summer,0,0,1
+Togo,2004,Summer,0,0,1
+Togo,2008,Summer,30,0,0
+Togo,2012,Summer,0,0,0
+Togo,2014,Winter,0,1,2
+Togo,2016,Summer,0,0,0
+Togo,2018,Winter,0,1,2
+Togo,2020,Summer,0,0,0
+Tonga,1992,Summer,0,0,1
+Tonga,1996,Summer,15,0,1
+Tonga,2000,Summer,0,0,1
+Tonga,2004,Summer,0,0,1
+Tonga,2008,Summer,0,0,0
+Tonga,2012,Summer,0,0,0
+Tonga,2014,Winter,0,1,2
+Tonga,2016,Summer,0,0,0
+Tonga,2018,Winter,0,1,2
+Tonga,2020,Summer,0,0,0
+Trinidad and Tobago,1992,Summer,0,0,1
+Trinidad and Tobago,1994,Winter,0,1,2
+Trinidad and Tobago,1996,Summer,110,0,1
+Trinidad and Tobago,1998,Winter,0,1,2
+Trinidad and Tobago,2000,Summer,160,0,1
+Trinidad and Tobago,2002,Winter,0,1,2
+Trinidad and Tobago,2004,Summer,130,0,1
+Trinidad and Tobago,2008,Summer,200,0,0
+Trinidad and Tobago,2012,Summer,880,0,0
+Trinidad and Tobago,2016,Summer,140,0,0
+Trinidad and Tobago,2020,Summer,0,0,0
+Trinidad and Tobago,2022,Winter,0,1,2
+Tunisia,1992,Summer,0,0,1
+Tunisia,1996,Summer,115,0,1
+Tunisia,2000,Summer,0,0,1
+Tunisia,2004,Summer,0,0,1
+Tunisia,2008,Summer,300,0,0
+Tunisia,2012,Summer,1500,0,0
+Tunisia,2016,Summer,1380,0,0
+Tunisia,2020,Summer,960,0,0
+Turkey,1992,Summer,1110,0,1
+Turkey,1994,Winter,0,1,2
+Turkey,1996,Summer,1710,0,1
+Turkey,1998,Winter,0,1,2
+Turkey,2000,Summer,2350,0,1
+Turkey,2002,Winter,0,1,2
+Turkey,2004,Summer,6200,0,1
+Turkey,2006,Winter,0,1,2
+Turkey,2008,Summer,3050,0,0
+Turkey,2010,Winter,0,1,2
+Turkey,2012,Summer,2430,0,0
+Turkey,2014,Winter,0,1,2
+Turkey,2016,Summer,6160,0,0
+Turkey,2018,Winter,0,1,2
+Turkey,2020,Summer,10140,0,0
+Turkey,2022,Winter,0,1,2
+Turkmenistan,1996,Summer,0,0,1
+Turkmenistan,2000,Summer,0,0,1
+Turkmenistan,2004,Summer,0,0,1
+Turkmenistan,2008,Summer,0,0,0
+Turkmenistan,2012,Summer,0,0,0
+Turkmenistan,2016,Summer,0,0,0
+Turkmenistan,2020,Summer,50,0,0
+Tuvalu,2008,Summer,0,0,0
+Tuvalu,2012,Summer,0,0,0
+US Virgin Islands,1992,Summer,0,0,1
+US Virgin Islands,1994,Winter,0,1,2
+US Virgin Islands,1996,Summer,0,0,1
+US Virgin Islands,1998,Winter,0,1,2
+US Virgin Islands,2000,Summer,0,0,1
+US Virgin Islands,2002,Winter,0,1,2
+US Virgin Islands,2004,Summer,0,0,1
+US Virgin Islands,2008,Summer,0,0,0
+US Virgin Islands,2012,Summer,0,0,0
+US Virgin Islands,2014,Winter,0,1,2
+US Virgin Islands,2016,Summer,0,0,0
+Uganda,1992,Summer,0,0,1
+Uganda,1996,Summer,40,0,1
+Uganda,2000,Summer,0,0,1
+Uganda,2004,Summer,0,0,1
+Uganda,2008,Summer,0,0,0
+Uganda,2012,Summer,90,0,0
+Uganda,2016,Summer,0,0,0
+Uganda,2020,Summer,720,0,0
+Ukraine,1994,Winter,460,1,2
+Ukraine,1996,Summer,20500,0,1
+Ukraine,1998,Winter,435,1,2
+Ukraine,2000,Summer,44750,0,1
+Ukraine,2002,Winter,0,1,2
+Ukraine,2004,Summer,43700,0,1
+Ukraine,2006,Winter,2670,1,2
+Ukraine,2008,Summer,47840,0,0
+Ukraine,2010,Winter,0,1,2
+Ukraine,2012,Summer,38000,0,0
+Ukraine,2014,Winter,1540,1,2
+Ukraine,2016,Summer,19200,0,0
+Ukraine,2018,Winter,630,1,2
+Ukraine,2020,Summer,27720,0,0
+Ukraine,2022,Winter,820,1,2
+Unified Team,1992,Summer,115140,0,1
+United Arab Emirates,1992,Summer,0,0,1
+United Arab Emirates,1996,Summer,0,0,1
+United Arab Emirates,2000,Summer,0,0,1
+United Arab Emirates,2004,Summer,40,0,1
+United Arab Emirates,2008,Summer,0,0,0
+United Arab Emirates,2012,Summer,0,0,0
+United Arab Emirates,2016,Summer,120,0,0
+United Arab Emirates,2020,Summer,0,0,0
+United Republic of Tanzania,1992,Summer,0,0,1
+United Republic of Tanzania,1996,Summer,0,0,1
+United Republic of Tanzania,2000,Summer,0,0,1
+United Republic of Tanzania,2004,Summer,0,0,1
+United Republic of Tanzania,2008,Summer,0,0,0
+United Republic of Tanzania,2012,Summer,0,0,0
+United Republic of Tanzania,2016,Summer,0,0,0
+United Republic of Tanzania,2020,Summer,0,0,0
+United States of America,1992,Summer,132795,0,3
+United States of America,1994,Winter,11375,1,2
+United States of America,1996,Summer,205110,0,3
+United States of America,1998,Winter,15075,1,2
+United States of America,2000,Summer,318750,0,3
+United States of America,2002,Winter,81030,1,2
+United States of America,2004,Summer,380540,0,3
+United States of America,2006,Winter,59670,1,2
+United States of America,2008,Summer,422240,0,3
+United States of America,2010,Winter,92040,1,2
+United States of America,2012,Summer,435680,0,3
+United States of America,2014,Winter,83520,1,2
+United States of America,2016,Summer,476250,0,3
+United States of America,2018,Winter,67600,1,2
+United States of America,2020,Summer,482620,0,3
+United States of America,2022,Winter,72800,1,2
+Uruguay,1992,Summer,0,0,1
+Uruguay,1996,Summer,0,0,1
+Uruguay,1998,Winter,0,1,2
+Uruguay,2000,Summer,105,0,1
+Uruguay,2004,Summer,0,0,1
+Uruguay,2008,Summer,0,0,0
+Uruguay,2012,Summer,0,0,0
+Uruguay,2016,Summer,0,0,0
+Uruguay,2020,Summer,0,0,0
+Uzbekistan,1994,Winter,25,1,2
+Uzbekistan,1996,Summer,470,0,1
+Uzbekistan,1998,Winter,0,1,2
+Uzbekistan,2000,Summer,1420,0,1
+Uzbekistan,2002,Winter,0,1,2
+Uzbekistan,2004,Summer,2400,0,1
+Uzbekistan,2006,Winter,0,1,2
+Uzbekistan,2008,Summer,2000,0,0
+Uzbekistan,2010,Winter,0,1,2
+Uzbekistan,2012,Summer,980,0,0
+Uzbekistan,2014,Winter,0,1,2
+Uzbekistan,2016,Summer,7410,0,0
+Uzbekistan,2018,Winter,0,1,2
+Uzbekistan,2020,Summer,2700,0,0
+Uzbekistan,2022,Winter,0,1,2
+Vanuatu,1992,Summer,0,0,1
+Vanuatu,2000,Summer,0,0,1
+Vanuatu,2008,Summer,0,0,0
+Vanuatu,2012,Summer,0,0,0
+Vanuatu,2016,Summer,0,0,0
+Vanuatu,2020,Summer,0,0,0
+Venezuela,1992,Summer,0,0,1
+Venezuela,1996,Summer,0,0,1
+Venezuela,1998,Winter,0,1,2
+Venezuela,2000,Summer,0,0,1
+Venezuela,2002,Winter,0,1,2
+Venezuela,2004,Summer,820,0,1
+Venezuela,2006,Winter,0,1,2
+Venezuela,2008,Summer,730,0,0
+Venezuela,2012,Summer,680,0,0
+Venezuela,2014,Winter,0,1,2
+Venezuela,2016,Summer,2340,0,0
+Venezuela,2020,Summer,1080,0,0
+Vietnam,1992,Summer,0,0,1
+Vietnam,1996,Summer,0,0,1
+Vietnam,2000,Summer,30,0,1
+Vietnam,2004,Summer,0,0,1
+Vietnam,2008,Summer,160,0,0
+Vietnam,2012,Summer,0,0,0
+Vietnam,2016,Summer,440,0,0
+Vietnam,2020,Summer,0,0,0
+"Virgin Islands, British",2020,Summer,0,0,0
+"Virgin Islands, US",2020,Summer,0,0,0
+"Virgin Islands, US",2022,Winter,0,1,2
+Yemen,1992,Summer,0,0,1
+Yemen,1996,Summer,0,0,1
+Yemen,2004,Summer,0,0,1
+Yemen,2008,Summer,0,0,0
+Yemen,2012,Summer,0,0,0
+Yemen,2016,Summer,0,0,0
+Yemen,2020,Summer,0,0,0
+Zambia,1992,Summer,0,0,1
+Zambia,1996,Summer,25,0,1
+Zambia,2000,Summer,0,0,1
+Zambia,2004,Summer,0,0,1
+Zambia,2008,Summer,0,0,0
+Zambia,2012,Summer,0,0,0
+Zambia,2016,Summer,0,0,0
+Zambia,2020,Summer,0,0,0
+Zimbabwe,1992,Summer,0,0,1
+Zimbabwe,1996,Summer,0,0,1
+Zimbabwe,2000,Summer,0,0,1
+Zimbabwe,2004,Summer,240,0,1
+Zimbabwe,2008,Summer,520,0,0
+Zimbabwe,2012,Summer,0,0,0
+Zimbabwe,2014,Winter,0,1,2
+Zimbabwe,2016,Summer,0,0,0
+Zimbabwe,2020,Summer,0,0,0

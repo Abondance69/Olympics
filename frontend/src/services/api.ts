@@ -51,7 +51,7 @@ export const getCountriesClusters = () => axios.get(`${apiUrl}/countries/cluster
 
 // Results endpoint
 export const getResults = (params?: { country?: string; game?: string; season?: string }) => 
-  axios.get(`${apiUrl}`, { params });
+  axios.get(`${apiUrl}/results`, { params });
 
 // Athlete prediction endpoint
 export const predictAthlete = (data: { age?: number; athlete_year_birth?: number; games_participations: number }) => 

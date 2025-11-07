@@ -47,7 +47,7 @@ const Predictions: React.FC = () => {
     setPrediction(null);
 
     try {
-      const res = await axios.post("http://localhost:8000/api/predict/medals", {
+      const res = await axios.post(`${apiUrl}/predict/medals`, {
         country_name: selectedCountry,
         game_year: selectedYear,
         game_season: season,
